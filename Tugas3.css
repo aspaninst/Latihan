@@ -1,0 +1,33 @@
+body {
+  background-color: #3A0304;
+  color: white;
+}
+
+h1 {
+  background-color: #0C1A1A;
+  font-size: 40px;
+  font-family: !important;
+}
+  .navbar {
+    background-color: black;
+    padding: 10px 0;
+  }
+  .navbar a {
+    color: hitam;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: inline-block;
+  }
+  .navbar a:hover {
+    background-color: hitam;
+  }
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}

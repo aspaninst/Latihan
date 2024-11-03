@@ -3,31 +3,315 @@ body {
   color: white;
 }
 
-h1 {
-  background-color: #0C1A1A;
-  font-size: 40px;
-  font-family: !important;
-}
-  .navbar {
-    background-color: black;
-    padding: 10px 0;
-  }
-  .navbar a {
-    color: hitam;
-    text-decoration: none;
-    padding: 14px 20px;
-    display: inline-block;
-  }
-  .navbar a:hover {
-    background-color: hitam;
-  }
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
 
-h1 {
+nav{
+  background: #0C1A1A;
+  height: 80px;
+  width: 100%;
+}
+
+label.logo{
   color: white;
-  text-align: center;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
 }
 
-p {
-  font-family: verdana;
-  font-size: 20px;
+nav ul{
+  float: right;
+  margin-right: 20px;
 }
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  padding: 13px 19px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+a.active,a:hover{
+  background: #3A0304 ;
+  transition: 2s;
+} 
+
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check{
+  display: none;
+}
+
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #0C1A1A;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0,5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover, a.active{
+    background: none;
+    color: #3A0304;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+
+section{
+    background: url(Cineverse.jpeg)no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+  }
+}
+
+#marquee {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/*Pengenalan web*/
+.p1 {
+    font-size: 17px;
+    font-family: serif;
+    margin: 0 auto;
+    padding: 60px 30px;
+    color: #FFFFFF; 
+    max-width: 800px; 
+    line-height: 1.0;
+    letter-spacing: 1,6px;
+    text-align: center;
+    border-style: dotted;
+}
+
+
+#recbulanan{
+  text-align: center;
+  font-family: serif;
+  font-size: 30px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#rec {
+  text-align: center;
+  font-family: serif;
+  font-size: 30px;
+  padding: 20px 20px;
+}
+
+h5 {
+  background-color: #0C1A1A;
+  color: #0C1A1A;
+  border-radius: 20px;
+}
+
+
+  .search-form {
+    background-color: #0C1A1A;
+    height: 400px;
+    width: 1200px;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 20px;
+    border-style: double;
+}
+
+.search-form label {
+    color: white;
+    font-family: serif;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.search-form input[type="text"] {
+    width: 700px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+
+.trailer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px, 10px;
+    background-color: #0C1A1A;
+    border-radius: 10px;
+}
+
+.trailer table {
+    border-spacing: 40px;
+}
+
+.trailer iframe {
+    width: 500px;
+    height: 300px;
+    border-radius: 20px;
+}
+}
+
+.quotes {
+    color: #FFFFFF;
+    padding: 20px;
+    margin: 40px auto; 
+    width: 80%; 
+    text-align: justify; 
+    border-style: dotted;
+}
+
+.title {
+    font-family: serif; 
+    font-size: 50px; 
+    margin-bottom: 15px;
+    color: 0C1A1A;
+    padding: 40px;
+}
+
+.quote {
+    font-family: monospace; 
+    font-size: 21px;
+    font-style: italic;
+    line-height: 1.5; 
+    max-width: 800px; 
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.footer{
+    background-color: darkred;
+}
+.footercontainer{
+    width: 100%;
+    padding: 70px 30px 20px ;
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding:  10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0,9;
+}
+/* Hover affect on social media icon */
+.socialIcons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+.footerNav{
+    margin: 30px 0;
+}
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.footerNav ul li a{
+    color:white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+
+}
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+.footerBottom{
+    background-color: #0C1A1A;
+    padding: 20px;
+    text-align: center;
+}
+.footerBottom p{
+    color: white;
+}
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+@media (max-width: 700px){
+    .footerNav ul{
+        flex-direction: column;
+    } 
+    .footerNav ul li{
+        width:100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .socialIcons a{
+        padding: 8px;
+        margin: 4px;
+    }
+}
+
+

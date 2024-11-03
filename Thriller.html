@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Thriller CineVerse</title>
+    <link rel="icon" type="image/x-icon" href="/latihan/images/cineverse.jpeg">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+        }
+
+        .body {
+            background-color: #3A0304;
+            color: white;
+        }
+
+        nav {
+            background: #0C1A1A;
+            height: 80px;
+            width: 100%;
+        }
+
+        label.logo {
+            color: white;
+            font-size: 35px;
+            line-height: 80px;
+            padding: 0 100px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            float: right;
+            margin-right: 20px;
+        }
+
+        nav ul li {
+            display: inline-block;
+            line-height: 80px;
+            margin: 0 5px;
+        }
+
+        nav ul li a {
+            color: white;
+            font-size: 17px;
+            padding: 13px 19px;
+            border-radius: 3px;
+            text-transform: uppercase;
+        }
+
+        a.active, a:hover {
+            background: #3A0304;
+            transition: 0.3s; /* Perbaiki durasi transisi */
+        } 
+
+        .checkbtn {
+            font-size: 30px;
+            color: white;
+            float: right;
+            line-height: 80px;
+            margin-right: 40px;
+            cursor: pointer;
+            display: none;
+        }
+
+        #check {
+            display: none;
+        }
+
+        @media (max-width: 952px) {
+            label.logo {
+                font-size: 30px;
+                padding-left: 50px;
+            }
+
+            nav ul li a {
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 858px) {
+            .checkbtn {
+                display: block;
+            }
+
+            nav ul {
+                position: fixed;
+                width: 100%;
+                height: 100vh;
+                background: #0C1A1A;
+                top: 80px;
+                left: -100%;
+                text-align: center;
+                transition: all 0.5s; /* Perbaiki tanda koma */
+            }
+
+            nav ul li {
+                display: block;
+                margin: 50px 0;
+                line-height: 30px;
+            }
+
+            nav ul li a {
+                font-size: 20px;
+            }
+
+            a:hover, a.active {
+                background: none;
+                color: #3A0304;
+            }
+
+            #check:checked ~ ul {
+                left: 0;
+            }
+        }
+
+        .section {
+            background: url(Cineverse.jpeg) no-repeat center center;
+            background-size: cover;
+            height: calc(10vh - 5px);
+        }
+
+        h5 {
+            background-color: #0C1A1A;
+            color: #0C1A1A;
+            border-radius: 20px;
+        }
+        *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.footer{
+    background-color: darkred;
+}
+.footercontainer{
+    width: 100%;
+    padding: 70px 30px 20px ;
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding:  10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0,9;
+}
+/* Hover affect on social media icon */
+.socialIcons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+.footerNav{
+    margin: 30px 0;
+}
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.footerNav ul li a{
+    color:white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+
+}
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+.footerBottom{
+    background-color: #0C1A1A;
+    padding: 20px;
+    text-align: center;
+}
+.footerBottom p{
+    color: white;
+}
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+@media (max-width: 700px){
+    .footerNav ul{
+        flex-direction: column;
+    } 
+    .footerNav ul li{
+        width:100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .socialIcons a{
+        padding: 8px;
+        margin: 4px;
+    }
+}
+
+    </style>
+</head>
+
+ <nav>
+        <label class="logo"> Thriller CineVerse</label>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa fa-bars"></i>
+        </label>
+        <ul>
+            <li><a href="http://localhost/Latihan/Latihan3.html">Home</a></li>
+            <li><a href="http://localhost/Latihan/About.html">About</a></li>
+            <li><a href="http://localhost/Latihan/Horror.html">Horror</a></li>
+            <li><a class="active" href="#">Thriller</a></li>
+    </nav>
+    <section></section>
+    <br>
+    <br>
+</head>
+<body bgcolor="#3A0304">
+
+<h2 id="rec" style="text-align: center; font-size: 30px; font-family: serif; margin: 0 auto; padding: 20px; color: white;">RECENTLY ADD</h2>
+<p><table id="rec table" style="text-align: center; width: 50%; margin: 0 auto;">
+    <tr>
+        <td align="center"><a href="https://youtu.be/OG7wOTE8NhE?si=5LsbRBuaVVagwMVG"><img src="/Latihan/Images/poster11.jpg" width="200px" height="275px;"></td>
+        <td align="center"><a href="https://youtu.be/FjzxI6uf8H8?si=5zEPwi4USHPHlHLg"><img src="/Latihan/Images/poster12.jpg" width="200px" height="275px"></td>
+        <td align="center"><a href="https://youtu.be/RlfooqeZcdY?si=t79rIYvtledBCi4C"><img src="/Latihan/Images/poster13.jpg" width="200px" height="275px"></td>
+        <td align="center"><a href="https://youtu.be/n3ttNeXKPHg?si=S8JCgdMioTmm5TZx"><img src="/Latihan/Images/p.jpg" width="200px" height="275px"></td>
+        <td align="center"><a href="https://youtu.be/JiljqpKZNpw?si=xFsLb1iRJbLZfRl6"><img src="/Latihan/Images/poster14.jpg" width="200px" height="275px"></td>
+        <td align="center"><a href="https://youtu.be/MACU-2pqVOI?si=3oNve66bXDTK_83k"><img src="/Latihan/Images/poster15.jpg" width="200px" height="275px"></td>
+    </tr>
+    <tr>
+        <td align="center" style="color: white;">Longlegs</td>
+        <td align="center" style="color: white;">Speak No Evil</td>
+        <td align="center" style="color: white;">The Platform</td>
+        <td align="center" style="color: white;">Maharaja</td>
+        <td align="center" style="color: white;">What You Wish For</td>
+        <td align="center" style="color: white;">Immaculate</td>
+    </tr>
+</table></p>
+<br>
+
+<h5>x</h5>
+
+<h2 id="rec" style="text-align: center; font-size: 30px; font-family: serif; margin: 0 auto; padding: 20px; color: white;">MOST WATCHED</h2>
+
+<h5>x</h5>
+<br>
+<h3 style="color: white;"><u>1. Gone Girl</u></h3>
+<table>
+<thead>
+    <td>
+        <table>
+            <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/0VGD_jLyE9Y?si=eUlxN3MLN8qW6ffL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen; style="border-radius: 10px"></iframe>
+        </div>
+        </table>
+    </td>
+    <td>
+        <table cellpadding="2" c>
+            <tr>
+                <td style="color: white; padding top: 10px; padding bottom: 10px; padding-left: 20px; padding right: 20px;"><b>Judul</b></td>
+                <td style="color: white; padding top: 10px; padding bottom: 10px; padding-left: 20px; padding right: 20px;">Gone Girl</td>
+            </tr>
+            <tr>
+                <td style="color: white; padding top: 10px; padding bottom: 10px; padding-left: 20px; padding right: 20px;"><b>Produksi</b></td>
+                <td style="color: white; padding top: 10px; padding bottom: 10px; padding-left: 20px; padding right: 20px;">20th Century Fox</td>
+            </tr>
+            <tr>
+                <td style="color: white; padding top: 10px; padding bottom: 10px; padding-left: 20px; padding right: 20px;"><b>Sutradara</b></td>
+                <td style="color: white; padding top: 10px; padding bottom: 10px; padding-left: 20px; padding right: 20px;">David Fincher</td>
+            </tr>
+            <tr>
+                <td style="color: white; padding top: 10px; padding bottom: 10px; padding-left: 20px; padding right: 20px;"><b>Durasi Film</b></td>
+                <td style="color: white; padding top: 10px; padding bottom: 10px; padding-left: 20px; padding right: 20px;">2 Jam 29 Menit</td>
+            </tr>
+            <tr>
+                <td style="color: white; padding top: 10px; padding bottom: 10px; padding-left: 20px; padding right: 20px;"><b>Sinopsis</b></td>
+                <td style="color: white; padding top: 10px; padding bottom: 10px; padding-left: 20px; padding right: 20px; text-align: justify;">Mengisahkan seorang pria dicurigai sebagai sosok dibalik dalang menghilangnya sang istri. Nick Dunne (Ben Affleck) melaporkan istrinya, Amy (Rosamund Pinke) yang menghilang pada perayaan pernikahan kelimanya. Menghilangnya sang istri menjadi sorotan di berbagai media. Diketahui Amy merupakan inspirasi orang tuanya dalam membuat buku anak-anak berjudul Amazing Amy yang populer di Amerika. Detektif Rhond Boney (Kim Dickens) mulai mencurigai Nick karena para polisi menemukan bukti tersembunyi di rumahnya. Akibatnya, media gencar untuk menggambarkan Nick sebagai seorang yang sosiopat karena sikap apatis nya. Pernikahan Amy dan Nick yang awalnya berkisah manis, kini merenggang setelah keduanya kehilangan pekerjaan. Amy dan Nick memutuskan untuk pindah dari New York ke Missouri yaitu kota kelahiran Nick untuk merawat ibunya yang sakit. Suatu waktu, Nick memutuskan untuk berselingkuh dengan Andie salah satu muridnya. Amy pun semakin kesal dengan Nick karena kepindahnya ke Missouri. Berbagai fakta seputar hilangnya Amy terus bermunculan dan memperkuat dugaan polisi bahwa Nick telah membunuh Amy. Apakah Nick merupakan dalang dibalik hilangnya Amy?</td>
+            </tr>
+        </table>
+    </td>
+</thead>
+</table>
+<br>
+<h5>x</h5>
+<br>
+<h3 style="color: white;"><u>2. Ready Or Not</u></h3>
+<table>
+<thead>
+    <td>
+        <table cellpadding="2" c>
+            <tr>
+                <td style="color: white; padding top: 10px; padding bottom: 10px; padding-left: 20px; padding right: 20px;"><b>Judul</b></td>
+                <td style="color: white; padding top: 10px; padding bottom: 10px; padding-left: 20px; padding right: 20px;">Ready Or Not</td>
+            </tr>
+            <tr>
+                <td style="color: white; padding top: 10px; padding bottom: 10px; padding-left: 20px; padding right: 20px;"><b>Produksi</b></td>
+                <td style="color: white; padding top: 10px; padding bottom: 10px; padding-left: 20px; padding right: 20px;">20th Century Fox</td>
+            </tr>
+            <tr>
+                <td style="color: white; padding top: 10px; padding bottom: 10px; padding-left: 20px; padding right: 20px;"><b>Sutradara</b></td>
+                <td style="color: white;">Matt Bettinelli-Olpin dan Tyler Gillett</td>
+            </tr>
+            <tr>
+                <td style="color: white; padding top: 10px; padding bottom: 10px; padding-left: 20px; padding right: 20px;"><b>Durasi Film</b></td>
+                <td style="color: white; padding top: 10px; padding bottom: 10px; padding-left: 20px; padding right: 20px;">1 Jam 34 Menit</td>
+            </tr>
+            <tr>
+                <td style="color: white; padding top: 10px; padding bottom: 10px; padding-left: 20px; padding right: 20px;"><b>Sinopsis</b></td>
+                <td style="color: white; padding top: 10px; padding bottom: 10px; padding-left: 20px; padding right: 20px; text-align: justify;">Ready Or Not bercerita tentang wanita muda bernama Grace (Samara Weaving) yang sedang berbahagia karena bisa menikahi kekasihnya, Alex Le Domas (Mark O'Brien). Alex adalah pria tampan dan kaya, salah satu anggota keluarga Le Domas, pemilik perusahaan mainan terbesar di Amerika Serikat. Pesta pernikahan berlangsung indah di siang hari. Malamnya Grace, Alex, dan anggota keluarga Le Domas lainnya berkumpul dan minum anggur bersama. Tony (Henry Czerny), Ayah Alex menjelaskan ada tradisi dalam keluarga Le Domas yang sudah dilakukan selama bertahun-tahun. Grace harus berpartisipasi dalam tradisi ini jika ingin diterima menjadi bagian dari keluarga Le Domas. Grace harus memainkan permainan tertentu sesuai kartu yang dia dapat dari dalam sebuah kotak misterius. Kartu yang dipilih Grace bertuliskan petak umpet, anggota keluarga Le Domas mengambil senjata dan mulai memburunya. Ternyata, tradisi ini merupakan sebuah persembahan bagi pemuja setan. Sejak dahulu, kakek buyut Alex telah bersekutu dengan setan demi mempertahankan kesuksesannya. Apakah Grace bisa lolos dan selamat dari permainan mengerikan ini?</td>
+            </tr>
+        </table>
+    </td>
+    <td>
+        <table>
+            <div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ZtYTwUxhAoI?si=MCq2nUV66i2riO5-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen; style="border-radius: 10px"></iframe>
+            </div>
+        </table>
+    </td>
+</thead>
+</table>
+<br>
+<h5>x</h5>
+<br>
+<h3 style="color: white;"><u>3. Get Out</u></h3>
+<table>
+<thead>
+    <td>
+        <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/DzfpyUB60YY?si=kQbzdrRE0d3jugYD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen; style="border-radius: 10px"></iframe>
+        </div>
+    </td>
+    <td>
+        <table cellpadding="2" c>
+            <tr>
+                <td style="color: white; padding top: 10px; padding bottom: 10px; padding-left: 20px; padding right: 20px;"><b>Judul</b></td>
+                <td style="color: white; padding top: 10px; padding bottom: 10px; padding-left: 20px; padding right: 20px;">Get Out</td>
+            </tr>
+            <tr>
+                <td style="color: white; padding top: 10px; padding bottom: 10px; padding-left: 20px; padding right: 20px;"><b>Produksi</b></td>
+                <td style="color: white; padding top: 10px; padding bottom: 10px; padding-left: 20px; padding right: 20px;">Universal Studio</td>
+            </tr>
+            <tr>
+                <td style="color: white; padding top: 10px; padding bottom: 10px; padding-left: 20px; padding right: 20px;"><b>Sutradara</b></td>
+                <td style="color: white; padding top: 10px; padding bottom: 10px; padding-left: 20px; padding right: 20px;">Matt Bettinelli-Olpin dan Tyler Gillett</td>
+            </tr>
+            <tr>
+                <td style="color: white; padding top: 10px; padding bottom: 10px; padding-left: 20px; padding right: 20px;"><b>Durasi Film</b></td>
+                <td style="color: white; padding top: 10px; padding bottom: 10px; padding-left: 20px; padding right: 20px;">1 Jam 44 Menit</td>
+            </tr>
+            <tr>
+                <td style="color: white; padding top: 10px; padding bottom: 10px; padding-left: 20px; padding right: 20px;"><b>Sinopsis</b></td>
+                <td style="color: white; padding top: 10px; padding bottom: 10px; padding-left: 20px; padding right: 20px; text-align: justify;">Cerita bermula dari Chris Washinton (Daniel Kaluuya), seorang pria kulit hitam yang mempunyai hubungan interracial dengan Rose Armitage (Allison Williams). Pada suatu hari, Chris akhirnya diajak Rose untuk berkunjung ke rumahnya yang berada di pinggiran kota. Kedatangan Chris berbarengan dengan acara pesta keluarga yang selalu diadakan setiap tahun. Bermacam peristiwa janggal pun mulai dirasakan oleh Chris saat di rumah Rose. Rasisme yang diangkat oleh Jordan Peele di dalam film ini mengacu pada perbudakan pada zaman modern. Orang-orang kulit hitam seperti Chris rupanya dijadikan komoditi oleh keluarga Rose untuk sebuah kepentingan khusus. Saat Chris akhirnya menyadari dirinya sedang berada dalam bahaya dan harus melarikan diri, keluarga Rose sudah bersiap-siap untuk melakukan aksi kejinya. Mampukah Chris keluar dari rumah Rose yang mengancam kehidupannya?</td>
+            </tr>
+        </table>
+    </td>
+</thead>
+</table>
+<br>
+<h5>x</h5>
+<br>
+<h3 style="color: white;"><u>4. Trap</u></h3>
+<table>
+<thead>
+    <td>
+        <table cellpadding="2" c>
+            <tr>
+                <td style="color: white; padding top: 10px; padding bottom: 10px; padding-left: 20px; padding right: 20px;"><b>Judul</b></td>
+                <td style="color: white; padding top: 10px; padding bottom: 10px; padding-left: 20px; padding right: 20px;">Trap</td>
+            </tr>
+            <tr>
+                <td style="color: white; padding top: 10px; padding bottom: 10px; padding-left: 20px; padding right: 20px;"><b>Produksi</b></td>
+                <td style="color: white; padding top: 10px; padding bottom: 10px; padding-left: 20px; padding right: 20px;">Warner Bros Picture</td>
+            </tr>
+            <tr>
+                <td style="color: white; padding top: 10px; padding bottom: 10px; padding-left: 20px; padding right: 20px;"><b>Sutradara</b></td>
+                <td style="color: white; padding top: 10px; padding bottom: 10px; padding-left: 20px; padding right: 20px;">M. Night Shyamalan</td>
+            </tr>
+            <tr>
+                <td style="color: white; padding top: 10px; padding bottom: 10px; padding-left: 20px; padding right: 20px;"><b>Durasi Film</b></td>
+                <td style="color: white; padding top: 10px; padding bottom: 10px; padding-left: 20px; padding right: 20px;">1 Jam 45 Menit</td>
+            </tr>
+            <tr>
+                <td style="color: white; padding top: 10px; padding bottom: 10px; padding-left: 20px; padding right: 20px;"><b>Sinopsis</b></td>
+                <td style="color: white; padding top: 10px; padding bottom: 10px; padding-left: 20px; padding right: 20px; text-align: justify;">Film ini mengisahkan tentang pria bernama Cooper Adams (Josh Hartnett) yang mewujudkan keinginan putrinya Riley (Ariel Donoghue) untuk menonton konser Lady Raven (Saleka Night Shyamalan), penyanyi pop yang sedang naik daun.Hadiah ini dipersembahkan Cooper karena putrinya berhasil mendapatkan nilai bagus di sekolah. Konser Lady Raven dihelat di sebuah panggung megah, dengan kapasitan penonton mencapai ribuan orang.Cerita berjalan dengan menyenangkan, sampai ketika kejanggalan demi kejanggalan dirasakan oleh Cooper. Salah satunya, adalah ketika seorang kru mengatakan jika banyak petugas FBI dan polisi yang berjaga di area konser. Para polisi tersebut ternyata tengah berencana untuk menangkap seorang pembunuh berantai yang dijuluki “The Butcher”, FBI mendapatkan informasi jika target mereka sedang menonton konser tersebut. Namun, informasi tersebut membuat Cooper teramat gelisah. “The Butcher”, sosok pembunuh berantai misterius yang selama ini dicari, sebenarnya adalah dirinya. Kisah keseruan seorang bapak dan anaknya menonton konser pun berubah menjadi kisah seorang pembunuh berantai berusaha menyelamatkan diri dengan berbagai daya dan upaya.</td>
+            </tr>
+        </table>
+    </td>
+    <td>
+        <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/hJiPAJKjUVg?si=3_JdQgoYiKQU4fDq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen; style="border-radius: 10px"></iframe>
+        </div>
+    </td>
+</thead>
+</table>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<h5>x</h5>
+<br>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<footer>
+    <div class="footerContainer">
+        <div class="socialIcons">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-google-plus"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div class="footerNav">
+            <ul><li><a href="https://www.netflix.com/id/">Netflix</a></li>
+                <li><a href="https://www.catchplay.com/id/home?utm_source=Google&utm_medium=Search&utm_campaign=2023_Optify+Catchplay_Google_Search_Conversion_AlwaysOn_ID_Opt000056&utm_content=Brand&gad_source=1&gclid=Cj0KCQjw99e4BhDiARIsAISE7P_xY08xDg-SyRfUVxoyOfRPxeArpoy0OiYtLE76DQEDXf4WXVkrw6waAt93EALw_wcB">CatchPlay</a></li>
+                <li><a href="https://www.hotstar.com/id/onboarding?gclid=Cj0KCQjw99e4BhDiARIsAISE7P-MQpEc2U24SBZ7J4sXxaKBumj2phHQYSJaIgWDYJa51FargDKutLwaAraPEALw_wcB&utm_campaign=MK-ID_YR-23_AN-WALDIZ_BS-DIS_CN-Performance_PB-Google_DT-CROSS_OB-Prf_CP-NA_FF-Prospecting_Search_Brand_Broad_26th_Feb_Web&utm_medium=cpc&utm_source=google&utm_term=disney%2B&ref=%2Fid%2Fsubscribe%2Fget-started%3Futm_source%3Dgoogle%26utm_medium%3Dcpc%26utm_campaign%3DMK-ID_YR-23_AN-WALDIZ_BS-DIS_CN-Performance_PB-Google_DT-CROSS_OB-Prf_CP-NA_FF-Prospecting_Search_Brand_Broad_26th_Feb_Web%26utm_adgroup%3DPure-Brand-BMM%26utm_term%3Ddisney%252B%26gad_source%3D1%26gclid%3DCj0KCQjw99e4BhDiARIsAISE7P-MQpEc2U24SBZ7J4sXxaKBumj2phHQYSJaIgWDYJa51FargDKutLwaAraPEALw_wcB">Disney+ hotstar</a></li>
+            </ul>
+        </div>
+        
+    </div>
+    <div class="footerBottom">
+        <p>&copy;2024 Designed by <span class="designer">Kelompok 3 5A</span></p>
+    </div>
+</footer>
+
+</body>
+</html>

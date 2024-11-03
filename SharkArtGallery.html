@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shark Art Gallery</title>
+    <link rel="stylesheet" href="x.css">
+</head>
+<body>
+
+    <header>
+        <h1>Shark Art Gallery</h1>
+        <p>Explore artistic interpretations of sharks and the underwater world.</p>
+    </header>
+
+    <section class="gallery">
+        <div class="art">
+            <img src="art1.jpg" alt="Shark Art 1">
+            <h3>Title: The Silent Hunter</h3>
+            <p>Artist: John Doe</p>
+        </div>
+        <!-- Additional artworks can be added here -->
+    </section>
+
+    <section class="upload-art">
+        <h2>Upload Your Own Art</h2>
+        <form action="/submit-art" method="post" enctype="multipart/form-data">
+            <input type="file" name="artwork" required>
+            <input type="text" name="artist-name" placeholder="Your Name" required>
+            <button type="submit">Upload</button>
+        </form>
+    </section>
+
+</body>
+</html>

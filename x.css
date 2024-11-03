@@ -1,0 +1,864 @@
+
+/*CSS UNTUK PAGE HOME*/
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+nav {
+  background-image: url('/Latihan/images/hiu1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 600px; /* Sesuaikan tinggi untuk navbar */
+  display: flex;
+  align-items: center; /* Center secara vertikal */
+  padding-left: 0px;
+}
+
+label.logo {
+  font-size: 1.8em;
+  font-family: Garamond, serif;
+  color: white;
+  font-size: 20px;
+  padding-left: 40px;
+  padding-right: 160px;
+  padding-bottom: 150px;
+  text-align: justify;
+}
+
+nav ul {
+  display: flex;
+  margin-top: -400px;
+  margin-right: 100px;
+  padding-right: 50px;
+  gap: 15px; /* Beri jarak antar menu */
+}
+
+nav ul li {
+  line-height: 80px;
+}
+
+/* Properti lainnya tetap sama */
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  padding: 10px 15px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  margin-top: -90px; /* Atur jarak vertikal ke atas */
+}
+
+a.active, a:hover {
+  background: black;
+  transition: background-color 0.5s;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: cadetblue;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  } 
+
+#check:checked ~ ul {
+    left: 0;
+  }
+  a.active, a:hover {
+    background: none;
+    color: cadetblue;
+  }
+}
+
+#title {
+    font-size: 35px;
+    font-family: lucida handwriting, cursive;
+    color: white;
+    padding-left: 10px;
+}
+
+#title1 {
+    padding-left: 10px;
+}
+
+.importance-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    margin: 0 auto;
+    max-width: 1000px;
+    background-color: #0C1A1A; /* Warna latar belakang */
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease; /* Transisi untuk efek hover */
+}
+
+.importance-container:hover {
+    background-color: #006666; /* Warna saat kursor di atas container */
+}
+
+.importance-overview {
+    text-align: center;
+    background-color: white; /* Warna latar belakang untuk judul */
+    color: black;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+}
+
+.importance-overview h2 {
+    margin: 0;
+    font-size: 24px;
+    font-family: 'Garamond', serif;
+}
+
+.importance-content {
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.importance-content p {
+    margin: 0;
+    line-height: 1.6;
+    font-size: 20px;
+    color: white;
+    font-family: Garamond, serif;
+    text-align: justify;
+}
+
+
+/* Card Layout for Species */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Mengatur box-sizing untuk semua elemen */
+}
+
+h5 {
+    font-size: 35px;
+    font-family: garamond, serif;
+    color: black;
+    padding: 35px;
+    border-radius: 5px;
+}
+
+
+h3 {
+    font-family: garamond, serif;
+    text-align: center;
+    color: white;
+}
+
+.card-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: white;
+    width: 100%; /* Pastikan lebar penuh */
+}
+
+.card {
+    background-color: #0C1A1A;
+    border-radius: 5px;
+    width: 250px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: justify;
+    min-width: 250px;
+    width: calc(20% - 16px);
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.2);
+    background-color: #006666; /* Warna saat kursor di atas container */
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.card p {
+    font-size: 0.9em;
+    color: white;
+}
+
+.more-cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: white;
+    width: 100%; /* Pastikan lebar penuh */
+}
+
+/* Sembunyikan tombol See More ketika checkbox aktif */
+.see-more-checkbox {
+    display: none; /* Sembunyikan checkbox */
+}
+
+.more-cards {
+    display: none; /* Sembunyikan kartu tambahan secara default */
+    width: 100%; /* Memastikan semua kartu muncul di bawah */
+    flex-wrap: wrap;
+}
+
+.see-more-checkbox:checked ~ .more-cards {
+    display: flex; /* Tampilkan kartu tambahan ketika checkbox diaktifkan */
+    gap: 20px;
+}
+
+/* Sembunyikan tombol "See More" setelah checkbox dicentang */
+.see-more-checkbox:checked + .see-more-button {
+    display: none;
+}
+
+.see-more-button {
+    display: inline-block;
+    text-align: center;
+    margin-top: 10px;
+    padding: 8px 15px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    width: 20%; /* Penuhi lebar penuh kontainer */
+    font-size: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: #66c2a5;
+}
+
+.see-more-button:hover {
+    background-color: #0C1A1A; /* Warna saat hover */
+    transform: scale(1.05); /* Efek pembesaran saat hover */
+}
+
+
+
+.gallery-preview {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: black;
+}
+
+.gallery-preview h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+
+.upload-art {
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    font-size: 20px;
+    font-family: garamond, serif;
+    color: white;
+    border-radius: 20px;
+}
+
+.upload-art form {
+    display: inline-block;
+    text-align: left;
+}
+
+.Quotes {
+    background-image: url('hero.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.Quotes h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: #57a894;
+}
+
+.Quotes p {
+    font-size: 1.2em;
+}
+
+/* Section General */
+.section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #66c2a5;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #4b9d82;
+}
+
+/* Blog Section */
+#blog {
+    background-color: #66c2a5;
+}
+
+#latestnews {
+    color: #0C1A1A;
+    font-size: 30px;
+}
+
+.blog-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Membuat 4 kolom */
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.blog-post {
+    width: 350px;
+    text-align: justify;
+    padding: 15px;
+    background-color: white;
+    border: 1px solid #ddd; /* Border untuk setiap berita */
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.blog-post:hover {
+    transform: scale(1.02); /* Efek zoom saat hover */
+}
+
+.blog-post img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.blog-post h3 {
+    margin: 10px 0;
+    color: #0C1A1A;
+}
+
+.blog-post p {
+    font-size: 0.9em;
+    text-align: justify;
+}
+
+.blog-content {
+text-align: center;}
+
+
+.read-more-button {
+    display: inline-block;
+    justify-content: center; 
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 10px auto 0;
+    padding: 8px 20px; 
+    background-color: #66c2a5;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: background-color 0.3s, transform 0.2s ease-in-out;
+}
+
+.read-more-button:hover {
+    background-color: #57a894; /* Warna saat hover */
+    transform: scale(1.05); /* Efek pembesaran saat hover */
+}
+
+/*FOOTER*/
+footer {
+    background-color: #006666; /* Warna latar belakang footer */
+    color: #fff; /* Warna teks */
+    padding: 20px; /* Jarak dalam footer */
+    text-align: center; /* Memusatkan teks */
+    position: relative; /* Agar footer bisa ditata lebih lanjut jika perlu */
+    bottom: 0; /* Menempatkan footer di bawah */
+    width: 100%; /* Mengambil lebar penuh */
+    font-family: 'Arial', sans-serif; /* Font yang lebih modern */
+}
+
+footer p {
+    margin: 0; /* Menghilangkan margin default pada p */
+    font-size: 0.9em; /* Ukuran font yang lebih kecil */
+}
+
+.social-icons {
+    margin-top: 10px; /* Jarak atas untuk ikon sosial */
+}
+
+.social-link {
+    color: #66c2a5; /* Warna teks link sosial */
+    text-decoration: none; /* Menghilangkan garis bawah */
+    margin: 0 10px; /* Jarak antar link sosial */
+    transition: color 0.3s; /* Transisi warna saat hover */
+}
+
+.social-link:hover {
+    color: #57a894; /* Warna saat hover */
+    text-decoration: underline; /* Garis bawah saat hover */
+}
+
+/* Tambahkan efek responsif */
+@media (max-width: 600px) {
+    footer {
+        font-size: 0.8em; /* Ukuran font lebih kecil pada layar kecil */
+    }
+}
+
+
+
+
+
+
+
+
+/*CSS UNTUK PAGE ABOUT US*/
+.navabout{
+  background-image: url('/Latihan/images/hiu4.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 600px; /* Sesuaikan tinggi untuk navbar */
+  display: flex;
+  align-items: center; /* Center secara vertikal */
+  padding-left: 0px;
+}
+
+nav ul {
+  display: flex;
+  margin: 0 auto;
+  gap: 15px; /* Beri jarak antar menu */
+  padding-bottom: 470px;
+}
+
+nav ul li {
+  line-height: 80px;
+}
+
+/* Properti lainnya tetap sama */
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  padding: 10px 15px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  margin-top: -90px; /* Atur jarak vertikal ke atas */
+}
+
+a.active, a:hover {
+  background: black;
+  transition: background-color 0.5s;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: cadetblue;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  } 
+
+#check:checked ~ ul {
+    left: 0;
+  }
+  a.active, a:hover {
+    background: none;
+    color: cadetblue;
+  }
+}
+
+.about-section {
+    background-color: #0C1A1A;
+    color: white;
+    padding: 50px;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 30px;
+    font-family: Garamond, serif;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-founder {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 0 auto;
+}
+
+.founder {
+    text-align: center;
+    max-width: 200px;
+}
+
+.founder h3 {
+    font-size: 25px;
+    margin: 5px 0 5px;
+    color: #B2D8D8;
+}
+
+.founder p {
+    font-size: 16px;
+    color: #ccc;
+}
+
+/* Media Query untuk tampilan mobile */
+@media (max-width: 768px) {
+    .about-team {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* About Section */
+.about-box {
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: #123A3A;
+    border-radius: 8px;
+    border: 2px solid #066666;
+}
+
+.about-box h2 {
+    font-size: 28px;
+    color: #B2D8D8;
+    margin-bottom: 15px;
+}
+
+.about-box p {
+    margin-bottom: 20px;
+    color: #b2d8d8;
+    text-align: justify;
+}
+
+/* Table */
+.info-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.info-table th, .info-table td {
+    padding: 10px;
+    border: 1px solid #066666;
+    text-align: left;
+}
+
+.info-table th {
+    background-color: #0A4C4C;
+    color: #B2D8D8;
+}
+
+.info-table td {
+    background-color: #0C1A1A;
+    color: #b2d8d8;
+}
+
+/* List */
+.info-list {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    color: #b2d8d8;
+}
+
+/* Icons */
+.icons {
+    display: flex;
+    gap: 15px;
+}
+
+.icons a {
+    text-decoration: none;
+    color: #F5F5F5;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #066666;
+    font-weight: bold;
+}
+
+.icons a:hover {
+    background-color: #B2D8D8;
+    color: #104040;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*CSS UNTUK PAGE MYTHS US*/
+.navmyths{
+  background-image: url('/Latihan/images/hiu3.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 600px; /* Sesuaikan tinggi untuk navbar */
+  display: flex;
+  align-items: center; /* Center secara vertikal */
+  padding-left: 0px;
+}
+
+
+nav ul {
+  display: flex;
+  margin: 0 auto;
+  gap: 15px; /* Beri jarak antar menu */
+  padding-bottom: 490px;
+}
+
+nav ul li {
+  line-height: 80px;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  padding: 10px 15px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  margin-top: -90px; /* Atur jarak vertikal ke atas */
+}
+
+a.active, a:hover {
+  background: black;
+  transition: background-color 0.5s;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: cadetblue;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  } 
+
+#check:checked ~ ul {
+    left: 0;
+  }
+  a.active, a:hover {
+    background: none;
+    color: cadetblue;
+  }
+}
+
+.box {
+  text-align: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 77, 77, 0.8);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  padding-bottom: 100px;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  padding-top: 50px;
+  color: #ffffff;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s;
+}
+
+h1:hover {
+  transform: scale(1.05);
+}
+
+.intro-text {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  color: #b3e5e5;
+  width: 100%;
+  opacity: 0.9;
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.card-grid {
+  display: flex;
+  flex-wrap: wrap; /* Memungkinkan kartu untuk membungkus ke baris berikutnya */
+  gap: 20px; /* Jarak antara kartu */
+  row-gap: 150px;
+  width: 100%;
+  padding: 20px; /* Padding untuk area grid secara keseluruhan */
+}
+
+.card1 {
+  flex: 1 1 300px; /* Memungkinkan kartu tumbuh dan menyusut, dengan lebar dasar 300px */
+  position: relative;
+  margin: 10px; /* Margin untuk memastikan tidak saling menempel */
+}
+
+.card-front, .card-back {
+  background-color: #004d4d;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;s
+  height: 200px; /* Tinggi kartu */
+  color: #f2f2f2;
+  transition: transform 0.6s;
+  position: absolute;
+  backface-visibility: hidden;
+  width: 100%; /* Pastikan kartu mengisi lebar sel grid */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Memberi efek kedalaman antara kartu */
+}
+
+/* Untuk memastikan ada cukup ruang saat kartu bertumpuk */
+.card1 {
+  margin-bottom: 20px; /* Opsional: menambahkan jarak di bawah kartu untuk pemisahan visual yang lebih baik */
+}
+
+.card-front {
+  transform: rotateY(0deg);
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  background-color: white;
+  color:  #0C1A1A
+}
+
+.card1:hover .card-front {
+  transform: rotateY(-180deg);
+  background-color: aliceblue;
+}
+
+.card1:hover .card-back {
+  transform: rotateY(0deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

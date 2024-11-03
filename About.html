@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> About CineVerse</title>
+    <link rel="icon" type="image/x-icon" href="/latihan/images/cineverse.jpeg">
+    <style>
+
+        .body {
+            bgcolor: #3A0304;
+            color: white;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+        }
+
+
+        nav {
+            background: #0C1A1A;
+            height: 80px;
+            width: 100%;
+        }
+
+        label.logo {
+            color: white;
+            font-size: 35px;
+            line-height: 80px;
+            padding: 0 100px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            float: right;
+            margin-right: 20px;
+        }
+
+        nav ul li {
+            display: inline-block;
+            line-height: 80px;
+            margin: 0 5px;
+        }
+
+        nav ul li a {
+            color: white;
+            font-size: 17px;
+            padding: 13px 19px;
+            border-radius: 3px;
+            text-transform: uppercase;
+        }
+
+        a.active, a:hover {
+            background: #3A0304;
+            transition: 0.3s; /* Perbaiki durasi transisi */
+        } 
+
+        .checkbtn {
+            font-size: 30px;
+            color: white;
+            float: right;
+            line-height: 80px;
+            margin-right: 40px;
+            cursor: pointer;
+            display: none;
+        }
+
+        #check {
+            display: none;
+        }
+
+        @media (max-width: 952px) {
+            label.logo {
+                font-size: 30px;
+                padding-left: 50px;
+            }
+
+            nav ul li a {
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 858px) {
+            .checkbtn {
+                display: block;
+            }
+
+            nav ul {
+                position: fixed;
+                width: 100%;
+                height: 100vh;
+                background: #0C1A1A;
+                top: 80px;
+                left: -100%;
+                text-align: center;
+                transition: all 0.5s; /* Perbaiki tanda koma */
+            }
+
+            nav ul li {
+                display: block;
+                margin: 50px 0;
+                line-height: 30px;
+            }
+
+            nav ul li a {
+                font-size: 20px;
+            }
+
+            a:hover, a.active {
+                background: none;
+                color: #3A0304;
+            }
+
+            #check:checked ~ ul {
+                left: 0;
+            }
+        }
+
+        .section {
+            background: url(Cineverse.jpeg) no-repeat center center;
+            background-size: cover;
+            height: calc(10vh - 5px);
+        }
+
+        .search-form, .form {
+            background-color: rgba(58, 3, 4, 0.8); 
+            border-radius: 5px;
+            padding: 20px;
+            margin: 20px auto;
+            width: 300px; 
+            text-align: center; 
+        }
+
+        .search-form label, .form label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 18px;
+            color: white;
+        }
+
+        .search-form input[type="text"], .form input[type="text"] {
+            width: 100%; /* Lebar input 100% dari form */
+            padding: 10px;
+            margin-bottom: 15px; /* Spasi bawah */
+            border: none;
+            border-radius: 3px;
+        }
+
+        .search-form input[type="text"]:focus, .form input[type="text"]:focus {
+            outline: none; 
+            border: 2px solid #3A0304; 
+        }
+
+        *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.footer{
+    background-color: darkred;
+}
+.footercontainer{
+    width: 100%;
+    padding: 70px 30px 20px ;
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding:  10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0,9;
+}
+/* Hover affect on social media icon */
+.socialIcons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+.footerNav{
+    margin: 30px 0;
+}
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.footerNav ul li a{
+    color:white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+
+}
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+.footerBottom{
+    background-color: #0C1A1A;
+    padding: 20px;
+    text-align: center;
+}
+.footerBottom p{
+    color: white;
+}
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+@media (max-width: 700px){
+    .footerNav ul{
+        flex-direction: column;
+    } 
+    .footerNav ul li{
+        width:100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .socialIcons a{
+        padding: 8px;
+        margin: 4px;
+    }
+}
+
+    </style>
+</head>
+<body bgcolor="#3A0304">
+    
+    <nav>
+        <label class="logo"> About CineVerse</label>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa fa-bars"></i>
+        </label>
+        <ul>
+            <li><a href="http://localhost/Latihan/Latihan3.html">Home</a></li>
+            <li><a class="active" href="#">About</a></li>
+            <li><a href="http://localhost/Latihan/Horror.html">Horror</a></li>
+            <li><a href="http://localhost/Latihan/Thriller.html">Thriller</a></li>
+        </ul>
+    </nav>
+    <section></section>
+
+    <br>
+    <br>
+
+<table style="width: 100%; border-radius: 30px; background-color: #0C1A1A;" align="center";>
+    <tr>
+        <td style="width: 70%;">
+            <p style="text-align: justify; font-size: 17px; font-family: serif; color: white; padding: 50px;">
+                <b>CineVerse</b> merupakan akronim dari <i>Cinema Universe</i>, merupakan destinasi utama untuk menemukan rekomendasi film terbaik dari berbagai genre! Misi kami sederhana: membantu para pecinta film seperti Anda menemukan tontonan yang sempurna, entah itu film aksi yang mendebarkan, drama yang menyentuh hati, atau film indie yang unik. Kami percaya bahwa film-film hebat bisa datang dari mana saja, dan rekomendasi yang kami berikan mencerminkan keragaman cerita dari seluruh dunia.
+                <br><br>
+                Di <i>CineVerse</i>, kami tidak hanya berfokus pada film-film blockbuster terbaru. Kami juga memberikan sorotan pada film indie, film klasik yang sering terlewatkan, dan film internasional yang layak untuk dilihat lebih luas. Setiap film yang kami rekomendasikan dilengkapi dengan informasi lengkap, mulai dari <i>judul, tahun rilis, sutradara, rumah produksi,</i> hingga <i>sinopsis</i>. Dengan informasi ini, Anda dapat memahami lebih dalam tentang film tersebut sebelum menontonnya, sehingga pengalaman menonton Anda menjadi lebih bermakna.
+                <br><br>
+                Selain memberikan rekomendasi, kami juga berupaya membangun komunitas pecinta film yang bisa berbagi ulasan, pendapat, dan rekomendasi favorit mereka. Dengan fitur seperti daftar film yang dikurasi khusus untuk berbagai kesempatan dan tempat untuk menyimpan favorit pribadi, <i>CineVerse</i> dirancang bukan hanya sebagai panduan, tetapi juga sebagai tempat berkumpul bagi siapa saja yang mencintai dunia sinema.
+            </p>
+        </td>
+        <td style="width: 30%;">
+            <img src="/Latihan/Images/cineverse.jpeg" style="width: 80%; height: 80%; border-radius: 30px; padding right: 20px">
+        </td>
+    </tr>
+</table>
+
+<br>
+<hr>
+<br>
+
+    <form class="search-form" action="/action_page.php"> 
+        <label for="fname">Lebih dekat dengan Kami</label><br> 
+        <input type="text" id="fname" name="fname" value=""><br>
+    </form>
+
+    <form class="form" action="/action_page.php">
+        <label for="fname">Jelajah Film Bersama</label><br>
+        <input type="text" id="fname" name="fname" value=""><br>
+    </form>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<footer>
+    <div class="footerContainer">
+        <div class="socialIcons">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-google-plus"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div class="footerNav">
+            <ul><li><a href="https://www.netflix.com/id/">Netflix</a></li>
+                <li><a href="https://www.catchplay.com/id/home?utm_source=Google&utm_medium=Search&utm_campaign=2023_Optify+Catchplay_Google_Search_Conversion_AlwaysOn_ID_Opt000056&utm_content=Brand&gad_source=1&gclid=Cj0KCQjw99e4BhDiARIsAISE7P_xY08xDg-SyRfUVxoyOfRPxeArpoy0OiYtLE76DQEDXf4WXVkrw6waAt93EALw_wcB">CatchPlay</a></li>
+                <li><a href="https://www.hotstar.com/id/onboarding?gclid=Cj0KCQjw99e4BhDiARIsAISE7P-MQpEc2U24SBZ7J4sXxaKBumj2phHQYSJaIgWDYJa51FargDKutLwaAraPEALw_wcB&utm_campaign=MK-ID_YR-23_AN-WALDIZ_BS-DIS_CN-Performance_PB-Google_DT-CROSS_OB-Prf_CP-NA_FF-Prospecting_Search_Brand_Broad_26th_Feb_Web&utm_medium=cpc&utm_source=google&utm_term=disney%2B&ref=%2Fid%2Fsubscribe%2Fget-started%3Futm_source%3Dgoogle%26utm_medium%3Dcpc%26utm_campaign%3DMK-ID_YR-23_AN-WALDIZ_BS-DIS_CN-Performance_PB-Google_DT-CROSS_OB-Prf_CP-NA_FF-Prospecting_Search_Brand_Broad_26th_Feb_Web%26utm_adgroup%3DPure-Brand-BMM%26utm_term%3Ddisney%252B%26gad_source%3D1%26gclid%3DCj0KCQjw99e4BhDiARIsAISE7P-MQpEc2U24SBZ7J4sXxaKBumj2phHQYSJaIgWDYJa51FargDKutLwaAraPEALw_wcB">Disney+ hotstar</a></li>
+            </ul>
+        </div>
+        
+    </div>
+    <div class="footerBottom">
+        <p>&copy;2024 Designed by <span class="designer">Kelompok 3 5A</span></p>
+    </div>
+</footer>
+
+
+</body>
+</html>

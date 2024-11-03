@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Horror CineVerse</title>
+    <link rel="icon" type="image/x-icon" href="/latihan/images/cineverse.jpeg">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+        }
+
+        .body {
+            background-color: #3A0304;
+            color: white;
+        }
+
+        nav {
+            background: #0C1A1A;
+            height: 80px;
+            width: 100%;
+        }
+
+        label.logo {
+            color: white;
+            font-size: 35px;
+            line-height: 80px;
+            padding: 0 100px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            float: right;
+            margin-right: 20px;
+        }
+
+        nav ul li {
+            display: inline-block;
+            line-height: 80px;
+            margin: 0 5px;
+        }
+
+        nav ul li a {
+            color: white;
+            font-size: 17px;
+            padding: 13px 19px;
+            border-radius: 3px;
+            text-transform: uppercase;
+        }
+
+        a.active, a:hover {
+            background: #3A0304;
+            transition: 0.3s; /* Perbaiki durasi transisi */
+        } 
+
+        .checkbtn {
+            font-size: 30px;
+            color: white;
+            float: right;
+            line-height: 80px;
+            margin-right: 40px;
+            cursor: pointer;
+            display: none;
+        }
+
+        #check {
+            display: none;
+        }
+
+        @media (max-width: 952px) {
+            label.logo {
+                font-size: 30px;
+                padding-left: 50px;
+            }
+
+            nav ul li a {
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 858px) {
+            .checkbtn {
+                display: block;
+            }
+
+            nav ul {
+                position: fixed;
+                width: 100%;
+                height: 100vh;
+                background: #0C1A1A;
+                top: 80px;
+                left: -100%;
+                text-align: center;
+                transition: all 0.5s; /* Perbaiki tanda koma */
+            }
+
+            nav ul li {
+                display: block;
+                margin: 50px 0;
+                line-height: 30px;
+            }
+
+            nav ul li a {
+                font-size: 20px;
+            }
+
+            a:hover, a.active {
+                background: none;
+                color: #3A0304;
+            }
+
+            #check:checked ~ ul {
+                left: 0;
+            }
+        }
+
+        .section {
+            background: url(Cineverse.jpeg) no-repeat center center;
+            background-size: cover;
+            height: calc(10vh - 5px);
+        }
+        *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.footer{
+    background-color: darkred;
+}
+.footercontainer{
+    width: 100%;
+    padding: 70px 30px 20px ;
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding:  10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0,9;
+}
+/* Hover affect on social media icon */
+.socialIcons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+.footerNav{
+    margin: 30px 0;
+}
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.footerNav ul li a{
+    color:white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+
+}
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+.footerBottom{
+    background-color: #0C1A1A;
+    padding: 20px;
+    text-align: center;
+}
+.footerBottom p{
+    color: white;
+}
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+@media (max-width: 700px){
+    .footerNav ul{
+        flex-direction: column;
+    } 
+    .footerNav ul li{
+        width:100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .socialIcons a{
+        padding: 8px;
+        margin: 4px;
+    }
+}
+
+    </style>
+</head>
+
+ <nav>
+        <label class="logo"> Horror CineVerse</label>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa fa-bars"></i>
+        </label>
+        <ul>
+            <li><a href="http://localhost/Latihan/Latihan3.html">Home</a></li>
+            <li><a href="http://localhost/Latihan/About.html">About</a></li>
+            <li><a class="active" href="#">Horror</a></li>
+            <li><a href="http://localhost/Latihan/Thriller.html">Thriller</a></li>
+        </ul>
+    </nav>
+    <section></section>
+
+    <br>
+    <br>
+</head>
+
+<body style="background-color: #3A0304;"></body>
+    <br>
+    <h2 style="color: white; text-align: center; padding: 10px;">MOST WATCHED</h2>
+    <br>
+    <br>
+    <table cellpadding="10">
+    <thead>
+        <td width="50%"><h3 style="background-color:#0C1A1A; color:white; text-align: center; border-radius:10px; padding:10px;">The Conjuring</h3></td>
+        <td width="50%"><h3 style="background-color:#0C1A1A; color:white; text-align: center; border-radius:10px; padding:10px;">Talk To Me</h3></td>
+    </thead>
+    <thead>
+        <td width="50%"; align="center"><div><iframe width="560" height="315" src="https://www.youtube.com/embed/k10ETZ41q5o?si=n_oWi2WEXa7unDGF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></iframe></div></td>
+        <td width="50%" align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/aLAKJu9aJys?si=n9ppQgkvsTsx6R0y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></td>
+    </thead>
+    <thead>
+        <td width="50%" align="justify" style=" padding: 10px;">
+    <table cellpadding="2">
+        <tr>
+            <td style="color: white; padding top: 10px; padding bottom: 10px; padding-left: 20px; padding right: 20px;"><b>Produksi</b></td>
+            <td style="color: white; padding top: 10px; padding bottom: 10px; padding-left: 20px; padding right: 20px;">The Safran Company, Evergreen Media Group, dan New Line Cinema. 2013</td>
+        </tr>
+        <tr>
+            <td style="color: white; padding top: 10px; padding bottom: 10px; padding-left: 20px; padding right: 20px;"><b>Sutradara</b></td>
+            <td style="color: white; padding top: 10px; padding bottom: 10px; padding-left: 20px; padding right: 20px;">James Wan</td>
+        </tr>
+        <tr>
+            <td style="color: white; padding top: 10px; padding bottom: 10px; padding-left: 20px; padding right: 20px;"><b>Durasi film</b></td>
+            <td style="color: white; padding top: 10px; padding bottom: 10px; padding-left: 20px; padding right: 20px;">112 menit</td>
+        </tr>
+        <tr>
+            <td style="color: white; padding top: 10px; padding bottom: 10px; padding-left: 20px; padding right: 20px;"><b>Sinopsis</b></td>
+            <td style="color: white; padding top: 10px; padding bottom: 10px; padding-left: 20px; padding right: 20px">Pada tahun 1971, Carolyn dan Roger Perron pindah ke sebuah rumah pertanian tua di Harrisville, Rhode Island, bersama kelima putri mereka. Segera setelah pindah, mereka mulai mengalami berbagai peristiwa mistis dan menakutkan. Carolyn menghubungi pasangan investigator paranormal, Ed dan Lorraine Warren, untuk meminta bantuan. Pasangan Warren menemukan bahwa rumah tersebut dihantui oleh roh jahat bernama Bathsheba, yang dulunya adalah seorang penyihir. Mereka berusaha untuk mengusir roh tersebut dan menyelamatkan keluarga Perron dari teror yang mengancam.</td>
+        </tr>
+    </table>
+    </td>
+
+            <td width="50%" align="justify"; style="padding: 10px">
+            <table cellpadding="2">
+            <tr>
+                <td style="color: white; padding top: 10px; padding bottom: 10px; padding-left: 20px; padding right: 20px;"><b>Produksi</b></td>
+                <td style="color: white; padding top: 10px; padding bottom: 10px; padding-left: 20px; padding right: 20px;">A24. 2023</td>
+            </tr>
+            <tr>
+                <td style="color: white; padding top: 10px; padding bottom: 10px; padding-left: 20px; padding right: 20px;"><b>Sutradara</b></td>
+                <td style="color: white; padding top: 10px; padding bottom: 10px; padding-left: 20px; padding right: 20px;">Danny dan Michael Philippou</td>
+            </tr>
+            <tr>
+                <td style="color: white; padding top: 10px; padding bottom: 10px; padding-left: 20px; padding right: 20px;"><b>Durasi film</b></td>
+                <td style="color: white; padding top: 10px; padding bottom: 10px; padding-left: 20px; padding right: 20px;">95 menit</td>
+            </tr>
+            <tr>
+                <td style="color: white; padding top: 10px; padding bottom: 10px; padding-left: 20px; padding right: 20px;"><b>Sinopsis</b></td>
+                <td style="color: white; padding top: 10px; padding bottom: 10px; padding-left: 20px; padding right: 20px;">Film ini mengisahkan sekelompok remaja yang menemukan cara untuk memanggil arwah melalui sebuah tangan yang diawetkan. Mereka menjadi kecanduan dengan sensasi yang dialami saat menggunakan tangan tersebut. Salah satu dari mereka, Mia, yang telah kehilangan ibunya, mulai mengalami kejadian-kejadian supranatural yang mengerikan. Ketika mereka mulai melewati batas dalam ritual tersebut, kekuatan supranatural yang mengerikan mulai menghantui mereka.</td>
+            </tr>
+         </table>
+    </td></td>
+    </thead>
+</table>
+
+<br>
+<br>
+
+<table cellpadding="5">
+    <thead>
+        <td width="50%"><h3 style="background-color:#0C1A1A; color:white; text-align: center; height: 40px; border-radius: 10px; padding: 5px">His House</h3></td>
+        <td width="50%"><h3 style="background-color:#0C1A1A; color:white; text-align: center; height: 40px; border-radius:10px; padding: 5px">Insidious</h3></td>
+    </thead>
+    <thead>
+        <td width="50%" align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/DYY0QJhlXjc?si=0Mv-arW7yrj2YRes" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></td>
+        <td width="50%" align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/62rpZcMYa0A?si=wwkFRARhMuWqMKEV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></td>
+    </thead>
+    <thead>
+        <td width="50%" align="justify">
+            <table cellpadding="2">
+            <tr>
+                <td style="color: white; padding top: 10px; padding bottom: 10px; padding-left: 20px; padding right: 20px;"><b>Produksi</b></td>
+                <td style="color: white; padding top: 10px; padding bottom: 10px; padding-left: 20px; padding right: 20px;">Netflix, Regency Enterprises, BBC Films, Vertigo Entertainment, dan Starchild Pictures. 2020</td>
+            </tr>
+            <tr>
+                <td style="color: white; padding top: 10px; padding bottom: 10px; padding-left: 20px; padding right: 20px;"><b>Sutradara</b></td>
+                <td style="color: white; padding top: 10px; padding bottom: 10px; padding-left: 20px; padding right: 20px;">Remi Weekes</td>
+            </tr>
+            <tr>
+                <td style="color: white; padding top: 10px; padding bottom: 10px; padding-left: 20px; padding right: 20px;"><b>Durasi film</b></td>
+                <td style="color: white; padding top: 10px; padding bottom: 10px; padding-left: 20px; padding right: 20px;">93 menit</td>
+            </tr>
+            <tr>
+                <td style="color: white; padding top: 10px; padding bottom: 10px; padding-left: 20px; padding right: 20px;"><b>Sinopsis</b></td>
+                <td style="color: white; padding top: 10px; padding bottom: 10px; padding-left: 20px; padding right: 20px;">Film ini mengisahkan sepasang pengungsi dari Sudan Selatan yang mencari suaka di Inggris. Mereka diberikan tempat tinggal oleh pemerintah Inggris, namun rumah tersebut ternyata dihantui oleh teror dari masa lalu mereka. Sang suami, Bol (diperankan oleh Sope Dirisu), berusaha beradaptasi dengan lingkungan barunya, sementara sang istri, Rial (diperankan oleh Wunmi Mosaku), tetap mempertahankan adat dan kebiasaan suku mereka. Ketegangan meningkat ketika mereka mulai mengalami kejadian-kejadian aneh dan menakutkan di rumah tersebut.</td>
+            </tr>
+            </table></td>
+            <td width="50%" align="justify">
+            <table cellpadding="2">
+            <tr>
+                <td style="color: white; padding top: 10px; padding bottom: 10px; padding-left: 20px; padding right: 20px;"><b>Produksi</b></td>
+                <td style="color: white; padding top: 10px; padding bottom: 10px; padding-left: 20px; padding right: 20px;">Blumhouse Productions, Alliance Films, dan IM Global. 2010</td>
+            </tr>
+            <tr>
+                <td style="color: white; padding top: 10px; padding bottom: 10px; padding-left: 20px; padding right: 20px;"><b>Sutradara</b></td>
+                <td style="color: white; padding top: 10px; padding bottom: 10px; padding-left: 20px; padding right: 20px;">James Wan</td>
+            </tr>
+            <tr>
+                <td style="color: white; padding top: 10px; padding bottom: 10px; padding-left: 20px; padding right: 20px;"><b>Durasi film</b></td>
+                <td style="color: white; padding top: 10px; padding bottom: 10px; padding-left: 20px; padding right: 20px;">101 menit</td>
+            </tr>
+            <tr>
+                <td style="color: white; padding top: 10px; padding bottom: 10px; padding-left: 20px; padding right: 20px;"><b>Sinopsis</b></td>
+                <td style="color: white; padding top: 10px; padding bottom: 10px; padding-left: 20px; padding right: 20px;">Film ini menceritakan tentang pasangan suami istri, Josh dan Renai Lambert, yang baru saja pindah ke rumah baru bersama ketiga anak mereka. Ketika putra mereka, Dalton, mengalami koma misterius setelah menjelajahi loteng, keluarga tersebut mulai mengalami kejadian paranormal yang menakutkan. Mereka menemukan bahwa Dalton telah menjadi wadah bagi berbagai entitas iblis di alam astral. Untuk menyelamatkan putra mereka, Josh dan Renai meminta bantuan cenayang Elise Rainier dan tim penyelidik paranormalnya.</td>
+            </tr>
+            </table>
+        </td>
+    </thead>
+</table>
+
+<br>
+<br>
+
+<h3 id="rec" style="background-color: #0C1A1A; color: white;">Recently added:</h3>
+<br>
+
+<p>
+  <table style="width:50%; margin: 0 auto;">
+    <tr>
+      <td align="center">
+        <a href="https://youtu.be/mvEetUDCKxE?si=LLrvYEyT2hKG46jk">
+          <img src="/Latihan/images/poster6.jpg" width="200px" height="275px" alt="No Respires">
+        </a>
+      </td>
+      <td align="center">
+        <a href="https://youtu.be/FZQvIJxG9Xs?si=VR28wUeSgLL3K0fB">
+          <img src="/Latihan/images/poster7.jpg" width="200px" height="275px" alt="The Shining">
+        </a>
+      </td>
+      <td align="center">
+        <a href="https://youtu.be/JMNOaJOWICo?si=7CLUC6FPIlGlH9Il">
+          <img src="/Latihan/images/poster8.jpg" width="200px" height="275px" alt="Sting">
+        </a>
+      </td>
+      <td align="center">
+        <a href="https://youtu.be/VFsmuRPClr4?si=teNwoWwYp2cZmJTR">
+          <img src="/Latihan/images/poster9.jpg" width="200px" height="275px" alt="The Conjuring 2">
+        </a>
+      </td>
+      <td align="center">
+        <a href="https://youtu.be/IpvJ67xxJQA?si=ydBzNEOIj4sZro3o">
+          <img src="/Latihan/images/poster10.jpg" width="200px" height="275px" alt="Nightmare">
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td align="center" style="color: white;">No Respires</td>
+      <td align="center" style="color: white;">The Shining</td>
+      <td align="center" style="color: white;">Sting</td>
+      <td align="center" style="color: white;">The Conjuring 2</td>
+      <td align="center" style="color: white;">Nightmare</td>
+    </tr>
+  </table>
+</p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<hr>
+<br>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<footer>
+    <div class="footerContainer">
+        <div class="socialIcons">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-google-plus"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div class="footerNav">
+            <ul><li><a href="https://www.netflix.com/id/">Netflix</a></li>
+                <li><a href="https://www.catchplay.com/id/home?utm_source=Google&utm_medium=Search&utm_campaign=2023_Optify+Catchplay_Google_Search_Conversion_AlwaysOn_ID_Opt000056&utm_content=Brand&gad_source=1&gclid=Cj0KCQjw99e4BhDiARIsAISE7P_xY08xDg-SyRfUVxoyOfRPxeArpoy0OiYtLE76DQEDXf4WXVkrw6waAt93EALw_wcB">CatchPlay</a></li>
+                <li><a href="https://www.hotstar.com/id/onboarding?gclid=Cj0KCQjw99e4BhDiARIsAISE7P-MQpEc2U24SBZ7J4sXxaKBumj2phHQYSJaIgWDYJa51FargDKutLwaAraPEALw_wcB&utm_campaign=MK-ID_YR-23_AN-WALDIZ_BS-DIS_CN-Performance_PB-Google_DT-CROSS_OB-Prf_CP-NA_FF-Prospecting_Search_Brand_Broad_26th_Feb_Web&utm_medium=cpc&utm_source=google&utm_term=disney%2B&ref=%2Fid%2Fsubscribe%2Fget-started%3Futm_source%3Dgoogle%26utm_medium%3Dcpc%26utm_campaign%3DMK-ID_YR-23_AN-WALDIZ_BS-DIS_CN-Performance_PB-Google_DT-CROSS_OB-Prf_CP-NA_FF-Prospecting_Search_Brand_Broad_26th_Feb_Web%26utm_adgroup%3DPure-Brand-BMM%26utm_term%3Ddisney%252B%26gad_source%3D1%26gclid%3DCj0KCQjw99e4BhDiARIsAISE7P-MQpEc2U24SBZ7J4sXxaKBumj2phHQYSJaIgWDYJa51FargDKutLwaAraPEALw_wcB">Disney+ hotstar</a></li>
+            </ul>
+        </div>
+        
+    </div>
+    <div class="footerBottom">
+        <p>&copy;2024 Designed by <span class="designer">Kelompok 3 5A</span></p>
+    </div>
+</footer>
+ 
+</body>
+</html>

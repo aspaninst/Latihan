@@ -83,9 +83,3 @@ document.getElementById("emailForm").onsubmit = function(e) {
     // Close the popup after submission
     closePopup();
 }
-
-Host github.com
-  Hostname ssh.github.com
-  Port 443
-  User git
-  IdentityFile ~/.ssh/id_rsa

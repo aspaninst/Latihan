@@ -367,6 +367,10 @@ a.active, a:hover {
   color: white;
 }
 
+.hidden {
+    display: none;
+}
+
 #threatInfo {
   display: none;
   margin-top: 20px;

@@ -1224,7 +1224,7 @@ a.active, a:hover {
 .about-box h2 {
     font-size: 28px;
     color: #B2D8D8;
-    margin-bottom: 15px;
+    margin-bottom: 40px;
 }
 
 .about-box p {
@@ -1290,7 +1290,7 @@ a.active, a:hover {
     background-color: white;
     border-radius: 20px;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 100px;
     margin-left: 70px;
     margin-right: 30px;
     max-width: 1200px;

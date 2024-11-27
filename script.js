@@ -119,6 +119,22 @@ document.getElementById('see-more-button').addEventListener('click', function() 
     seeMoreButton.style.display = 'none';
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+  // Ambil elemen tombol dan lebih banyak kartu
+  const seeMoreButton = document.getElementById('see-more-button');
+  const moreCards = document.getElementById('more-cards');
+  
+  // Ketika tombol "See More" diklik
+  seeMoreButton.addEventListener('click', function() {
+    // Tampilkan kartu tambahan
+    moreCards.style.display = 'flex';
+
+    // Sembunyikan tombol "See More"
+    seeMoreButton.style.display = 'none';
+  });
+});
+
+
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 function myFunction() {

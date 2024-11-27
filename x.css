@@ -1290,6 +1290,7 @@ a.active, a:hover {
     background-color: white;
     border-radius: 20px;
     margin: 0 auto;
+    margin-top: 50px;
     margin-left: 70px;
     margin-right: 30px;
     max-width: 1200px;

@@ -98,6 +98,7 @@ a.active, a:hover {
 
 /* Dropdown Button */
 /* Dropdown Button */
+/* Tombol Dropdown */
 .dropbtn {
     font-family: 'Times New Roman', serif;
     font-size: 17px;
@@ -110,62 +111,50 @@ a.active, a:hover {
     text-transform: uppercase;
 }
 
+/* Hover pada tombol dropdown */
 .dropbtn:hover {
-    background-color: #333;
+    background-color: #444; /* Warna abu yang sedikit lebih terang */
 }
 
-/* Dropdown Container */
+/* Kontainer Dropdown */
 .dropdown {
-  float: left;
-  overflow: hidden;
+    float: left;
+    position: relative; /* Agar dropdown-content posisinya relatif terhadap kontainer */
 }
 
-/* Dropdown button */
-.dropdown .dropbtn {
-  font-size: 16px;
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit; /* Important for vertical align on mobile phones */
-  margin: 0; /* Important for vertical align on mobile phones */
-}
-
-/* Add a red background color to navbar links on hover */
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
-}
-
-/* Dropdown content (hidden by default) */
+/* Dropdown Content */
 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+    display: none; /* Tersembunyi secara default */
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px; /* Lebar dropdown */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+    border-radius: 5px; /* Sudut membulat */
+    z-index: 1; /* Agar tampil di atas elemen lainnya */
+    overflow: hidden; /* Hilangkan elemen yang meluap */
 }
 
-/* Links inside the dropdown */
+/* Tautan di dalam dropdown */
 .dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
+    font-family: Arial, sans-serif;
+    font-size: 15px; /* Ukuran font lebih kecil */
+    color: #333; /* Teks abu gelap */
+    padding: 10px 15px; /* Spasi dalam tautan */
+    text-decoration: none; /* Hilangkan garis bawah */
+    display: block; /* Membuat tautan mengambil seluruh lebar */
 }
 
-/* Add a grey background color to dropdown links on hover */
+/* Hover pada tautan */
 .dropdown-content a:hover {
-  background-color: #ddd;
+    background-color: #e0e0e0; /* Warna abu terang saat dihover */
+    color: black; /* Warna teks lebih gelap */
 }
 
-/* Show the dropdown menu on hover */
+/* Menampilkan dropdown saat hover */
 .dropdown:hover .dropdown-content {
-  display: block;
+    display: block;
 }
+
 .checkbtn {
   font-size: 30px;
   color: cadetblue;

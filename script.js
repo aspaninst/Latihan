@@ -169,3 +169,52 @@ document.getElementById('joinForm').addEventListener('submit', function(event) {
   document.getElementById('joinPopup').style.display = 'none';
 });
 
+// Namespace untuk tambahan fungsi
+const SharkMitigation = (() => {
+  // Fungsi untuk mengatur tampilan teks "Mitigasi Ancaman terhadap Hiu"
+  const initializeThreatInfo = () => {
+    const threatButton = document.getElementById('threatBtn');
+    const threatInfo = document.getElementById('threatInfo');
+
+    if (threatButton && threatInfo) {
+      threatButton.addEventListener('click', () => {
+        if (threatInfo.style.display === 'none' || threatInfo.style.display === '') {
+          threatInfo.style.display = 'block';
+        } else {
+          threatInfo.style.display = 'none';
+        }
+      });
+    }
+  };
+
+  // Fungsi untuk membuat animasi atau efek tambahan jika diperlukan
+  const addAnimation = () => {
+    const threatButton = document.getElementById('threatBtn');
+    if (threatButton) {
+      threatButton.addEventListener('mouseover', () => {
+        threatButton.style.backgroundColor = '#d1e7e7';
+      });
+      threatButton.addEventListener('mouseout', () => {
+        threatButton.style.backgroundColor = ''; // Kembali ke default
+      });
+    }
+  };
+
+  // Fungsi inisialisasi untuk namespace ini
+  const init = () => {
+    initializeThreatInfo();
+    addAnimation();
+  };
+
+  // Public API
+  return {
+    init,
+  };
+})();
+
+// Panggil inisialisasi setelah DOM siap
+document.addEventListener('DOMContentLoaded', () => {
+  SharkMitigation.init();
+});
+
+

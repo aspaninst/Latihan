@@ -39,6 +39,66 @@ window.onclick = function(event) {
     }
   }
 }
+// Update jam setiap detik
+function updateClock() {
+  var now = new Date();
+  var timeString = now.toLocaleTimeString(); // Format waktu
+  document.getElementById('time').textContent = timeString;
+}
+
+// Jalankan updateClock setiap detik
+setInterval(updateClock, 1000);
+updateClock(); // Panggilan awal
+
+// Fungsi untuk membuat kalender
+function generateCalendar() {
+  const calendarBody = document.getElementById("calendar-body");
+  const monthYear = document.getElementById("calendar-month-year");
+  const now = new Date();
+
+  // Nama bulan
+  const monthNames = [
+    "January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December"
+  ];
+
+  // Set bulan dan tahun
+  const month = now.getMonth();
+  const year = now.getFullYear();
+  monthYear.textContent = `${monthNames[month]} ${year}`;
+
+  // Hapus isi tabel sebelumnya
+  calendarBody.innerHTML = "";
+
+  // Hari pertama bulan
+  const firstDay = new Date(year, month, 1).getDay();
+  const daysInMonth = new Date(year, month + 1, 0).getDate();
+
+  let date = 1;
+  for (let i = 0; i < 6; i++) {
+    const row = document.createElement("tr");
+
+    for (let j = 0; j < 7; j++) {
+      const cell = document.createElement("td");
+
+      if (i === 0 && j < firstDay) {
+        cell.textContent = ""; // Kosong sebelum tanggal 1
+      } else if (date > daysInMonth) {
+        cell.textContent = ""; // Kosong setelah akhir bulan
+      } else {
+        cell.textContent = date;
+        date++;
+      }
+
+      row.appendChild(cell);
+    }
+
+    calendarBody.appendChild(row);
+  }
+}
+
+// Panggil fungsi untuk menghasilkan kalender
+generateCalendar();
 
 // Menangani submit form Join (untuk form Join)
 document.getElementById('joinBtn').addEventListener('click', function() {

@@ -723,7 +723,6 @@ h3 {
 }
 
 .more-cards {
-    display: flex;
     gap: 20px;
     flex-wrap: wrap;
     justify-content: center;

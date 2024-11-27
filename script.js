@@ -41,6 +41,17 @@ window.onclick = function(event) {
   }
 }
 
+// Event listener untuk tombol mitigasi
+document.getElementById('threatBtn').addEventListener('click', function () {
+  var threatInfo = document.getElementById('threatInfo');
+  // Toggle class hidden
+  if (threatInfo.classList.contains('hidden')) {
+    threatInfo.classList.remove('hidden');
+  } else {
+    threatInfo.classList.add('hidden');
+  }
+});
+
 // Menangani submit form Join (untuk form Join)
 document.getElementById('joinBtn').addEventListener('click', function() {
   var joinPopup = document.getElementById('joinPopup');

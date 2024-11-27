@@ -724,15 +724,11 @@ h3 {
 
 .more-cards {
     gap: 20px;
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     width: 100%; /* Pastikan lebar penuh */
-}
-
-.more-cards {
-    display: none; /* Sembunyikan kartu tambahan secara default */
-    width: 100%; /* Memastikan semua kartu muncul di bawah */
-    flex-wrap: wrap;
+    display: none;
 }
 
 .see-more-button {

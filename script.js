@@ -96,27 +96,16 @@ document.addEventListener('DOMContentLoaded', () => {
   generateCalendar(currentMonth, currentYear);
 });
 
-document.getElementById('see-more-button').addEventListener('click', function() {
-    const moreCards = document.getElementById('more-cards');
-    const seeMoreButton = document.getElementById('see-more-button');
-    
-    // Tampilkan lebih banyak kartu
-    moreCards.style.display = 'flex';
-    
-    // Sembunyikan tombol "See More"
-    seeMoreButton.style.display = 'none';
-});
+document.addEventListener('DOMContentLoaded', function () {
+  // Mengambil elemen tombol dan kartu tambahan
+  const seeMoreButton = document.getElementById('see-more-button');
+  const moreCards = document.getElementById('more-cards');
 
-// Fungsi untuk menampilkan lebih banyak kartu
-document.getElementById('see-more-button').addEventListener('click', function() {
-    const moreCards = document.getElementById('more-cards');
-    const seeMoreButton = document.getElementById('see-more-button');
-    
-    // Tampilkan lebih banyak kartu
-    moreCards.style.display = 'flex';
-    
-    // Sembunyikan tombol "See More"
-    seeMoreButton.style.display = 'none';
+  // Fungsi untuk menampilkan lebih banyak kartu
+  seeMoreButton.addEventListener('click', function () {
+    moreCards.style.display = 'flex'; // Tampilkan kartu tambahan
+    seeMoreButton.style.display = 'none'; // Sembunyikan tombol "See More"
+  });
 });
 
 document.addEventListener('DOMContentLoaded', function() {

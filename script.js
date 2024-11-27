@@ -1,3 +1,4 @@
+alert("Script.js berhasil dimuat!");
 // Menampilkan popup Shark Lovers
 function myfunction() {
   // Menampilkan popup

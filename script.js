@@ -169,7 +169,7 @@ document.getElementById('joinForm').addEventListener('submit', function(event) {
   document.getElementById('joinPopup').style.display = 'none';
 });
 
-// Namespace untuk tambahan fungsi
+// Namespace untuk tambahan fungsi Mitigasi
 const SharkMitigation = (() => {
   // Fungsi untuk mengatur tampilan teks "Mitigasi Ancaman terhadap Hiu"
   const initializeThreatInfo = () => {
@@ -178,6 +178,7 @@ const SharkMitigation = (() => {
 
     if (threatButton && threatInfo) {
       threatButton.addEventListener('click', () => {
+        // Toggle visibility of threatInfo
         if (threatInfo.style.display === 'none' || threatInfo.style.display === '') {
           threatInfo.style.display = 'block';
         } else {

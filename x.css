@@ -95,31 +95,33 @@ a.active, a:hover {
   transition: background-color 0.5s;
 }
 
+
+/* Dropdown Button */
 /* Dropdown Button */
 .dropbtn {
-  font-family: 'Times New Roman', serif; /* Font serif */
-  color: white; /* Warna teks */
-  font-size: 17px; /* Ukuran font */
-  text-transform: uppercase; /* Semua huruf kapital */
-  margin-top: 20px; /* Jarak ke atas */
-  background: none; /* Tanpa latar belakang */
-  border: none; /* Tanpa garis tepi */
-  padding: 10px; /* Padding pada tombol */
-  cursor: pointer; /* Kursor berbentuk pointer */
-  transition: background-color 0.3s ease, color 0.3s ease; /* Animasi transisi */
+    font-family: 'Times New Roman', serif;
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    background: none;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .dropbtn:hover {
-  background: black; /* Latar belakang hitam saat hover */
-  color: white; /* Tetap warna putih untuk teks */
-  transition: background-color 0.5s ease; /* Animasi untuk latar belakang */
-  border-radius: 5px;
+    background: black;
+    color: white;
+    transition: background-color 0.5s ease;
+    border-radius: 5px;
 }
 
 /* Dropdown Container */
 .dropdown {
-  position: relative;
-  display: inline-block;
+    position: relative;
+    display: inline-block;
 }
 
 /* Dropdown Content */
@@ -132,9 +134,26 @@ a.active, a:hover {
     z-index: 1;
 }
 
+/* Show the Dropdown */
 .show {
     display: block;
 }
+
+/* Links in Dropdown */
+.dropdown-content a {
+    font-family: 'Times New Roman', serif;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover Effect for Links */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
 /* Links in Dropdown */
 .dropdown-content a {
   font-family: 'Times New Roman', serif; /* Font serif untuk link */

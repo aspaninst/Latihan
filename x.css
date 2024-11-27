@@ -721,16 +721,16 @@ h3 {
     font-size: 0.9em;
     color: white;
 }
-
+/* Initial state: hide the additional cards */
 .more-cards {
+    display: none;
     gap: 20px;
-    display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 100%; /* Pastikan lebar penuh */
-    display: none;
+    width: 100%;
 }
 
+/* CSS untuk tombol "See More" */
 .see-more-button {
     display: inline-block;
     text-align: center;
@@ -739,7 +739,7 @@ h3 {
     cursor: pointer;
     color: white;
     font-weight: bold;
-    width: 10%; /* Penuhi lebar penuh kontainer */
+    width: auto;
     font-size: 15px;
     border-radius: 10px;
     text-decoration: none;

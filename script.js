@@ -1,5 +1,5 @@
-// Menampilkan popup Shark Lovers
-function myfunction() {
+
+ function myfunction() {
   // Menampilkan popup
   var popup = document.getElementById('popup');
   var sharkImage = document.getElementById('sharkImage');
@@ -11,23 +11,111 @@ function myfunction() {
   sharkImage.alt = 'Shark Image';
 
   // Menampilkan popup
-  popup.style.display = 'flex';
+    popup.style.display = 'flex';
+  }
+
+  function closePopup() {
+  // Menyembunyikan popup
+   var popup = document.getElementById('popup');
+   popup.style.display = 'none';
+  }
+
+// Mengatur Tombol dan Menampilkan Info
+document.getElementById('threatBtn').addEventListener('click', function() {
+  const infoDiv = document.getElementById('threatInfo');
+  if (infoDiv.style.display === 'none' || infoDiv.style.display === '') {
+    infoDiv.style.display = 'block';
+  } else {
+    infoDiv.style.display = 'none';
+  }
+});
+
+// Fungsi untuk update jam
+function updateClock() {
+  var now = new Date();
+  var hours = now.getHours();
+  var minutes = now.getMinutes();
+  var seconds = now.getSeconds();
+  
+  // Menambahkan angka nol jika jam, menit, atau detik kurang dari 10
+  hours = (hours < 10) ? "0" + hours : hours;
+  minutes = (minutes < 10) ? "0" + minutes : minutes;
+  seconds = (seconds < 10) ? "0" + seconds : seconds;
+  
+  var timeString = hours + ":" + minutes + ":" + seconds;
+  document.getElementById("time").innerText = timeString;
 }
 
-// Menutup popup
-function closePopup() {
-  var popup = document.getElementById('popup');
-  popup.style.display = 'none';
-}
+// Update jam setiap detik
+setInterval(updateClock, 1000);
 
-// Toggle dropdown (dropdown menu)
-function toggleDropdown() {
+document.addEventListener('DOMContentLoaded', () => {
+  const calendarBody = document.getElementById('calendar-body');
+  const monthYear = document.getElementById('calendar-month-year');
+
+  const today = new Date();
+  const currentMonth = today.getMonth();
+  const currentYear = today.getFullYear();
+  const currentDate = today.getDate();
+
+  const months = [
+    "January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December"
+  ];
+
+  function generateCalendar(month, year) {
+    calendarBody.innerHTML = "";
+    monthYear.textContent = `${months[month]} ${year}`;
+
+    const firstDay = new Date(year, month, 1).getDay();
+    const daysInMonth = new Date(year, month + 1, 0).getDate();
+
+    let date = 1;
+    for (let i = 0; i < 6; i++) {
+      const row = document.createElement('tr');
+      for (let j = 0; j < 7; j++) {
+        const cell = document.createElement('td');
+
+        if (i === 0 && j < firstDay) {
+          cell.textContent = "";
+        } else if (date > daysInMonth) {
+          break;
+        } else {
+          cell.textContent = date;
+          if (date === currentDate && month === currentMonth && year === currentYear) {
+            cell.classList.add('today');
+          }
+          date++;
+        }
+        row.appendChild(cell);
+      }
+      calendarBody.appendChild(row);
+    }
+  }
+
+  generateCalendar(currentMonth, currentYear);
+});
+
+// Fungsi untuk menampilkan lebih banyak kartu
+document.getElementById('see-more-button').addEventListener('click', function() {
+    const moreCards = document.getElementById('more-cards');
+    const seeMoreButton = document.getElementById('see-more-button');
+    
+    // Tampilkan lebih banyak kartu
+    moreCards.style.display = 'flex';
+    
+    // Sembunyikan tombol "See More"
+    seeMoreButton.style.display = 'none';
+});
+
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
 
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {
-  // Jika klik di luar tombol dropdown, tutup menu dropdown
   if (!event.target.matches('.dropbtn')) {
     var dropdowns = document.getElementsByClassName("dropdown-content");
     var i;
@@ -39,78 +127,26 @@ window.onclick = function(event) {
     }
   }
 }
-// Update jam setiap detik
-function updateClock() {
-  var now = new Date();
-  var timeString = now.toLocaleTimeString(); // Format waktu
-  document.getElementById('time').textContent = timeString;
-}
 
-// Jalankan updateClock setiap detik
-setInterval(updateClock, 1000);
-updateClock(); // Panggilan awal
-
-// Fungsi untuk membuat kalender
-function generateCalendar() {
-  const calendarBody = document.getElementById("calendar-body");
-  const monthYear = document.getElementById("calendar-month-year");
-  const now = new Date();
-
-  // Nama bulan
-  const monthNames = [
-    "January", "February", "March", "April", "May", "June",
-    "July", "August", "September", "October", "November", "December"
-  ];
-
-  // Set bulan dan tahun
-  const month = now.getMonth();
-  const year = now.getFullYear();
-  monthYear.textContent = `${monthNames[month]} ${year}`;
-
-  // Hapus isi tabel sebelumnya
-  calendarBody.innerHTML = "";
-
-  // Hari pertama bulan
-  const firstDay = new Date(year, month, 1).getDay();
-  const daysInMonth = new Date(year, month + 1, 0).getDate();
-
-  let date = 1;
-  for (let i = 0; i < 6; i++) {
-    const row = document.createElement("tr");
-
-    for (let j = 0; j < 7; j++) {
-      const cell = document.createElement("td");
-
-      if (i === 0 && j < firstDay) {
-        cell.textContent = ""; // Kosong sebelum tanggal 1
-      } else if (date > daysInMonth) {
-        cell.textContent = ""; // Kosong setelah akhir bulan
-      } else {
-        cell.textContent = date;
-        date++;
-      }
-
-      row.appendChild(cell);
-    }
-
-    calendarBody.appendChild(row);
-  }
-}
-
-// Panggil fungsi untuk menghasilkan kalender
-generateCalendar();
-
-// Menangani submit form Join (untuk form Join)
+// Fungsi untuk membuka popup form Join
 document.getElementById('joinBtn').addEventListener('click', function() {
   var joinPopup = document.getElementById('joinPopup');
   joinPopup.style.display = 'flex';
 });
 
+// Fungsi untuk menutup popup form Join
 document.getElementById('closeJoinPopup').addEventListener('click', function() {
   var joinPopup = document.getElementById('joinPopup');
   joinPopup.style.display = 'none';
 });
 
+// Menutup popup ketika tombol Close ditekan
+document.getElementById('closeJoinFormBtn').addEventListener('click', function() {
+  var joinPopup = document.getElementById('joinPopup');
+  joinPopup.style.display = 'none';
+});
+
+// Menangani submit form (bisa diganti dengan fungsi lain seperti menyimpan data)
 document.getElementById('joinForm').addEventListener('submit', function(event) {
   event.preventDefault();
   var name = document.getElementById('name').value;
@@ -119,27 +155,3 @@ document.getElementById('joinForm').addEventListener('submit', function(event) {
   document.getElementById('joinPopup').style.display = 'none';
 });
 
-// Open the popup when the "Submit" button in the question form is clicked
-document.getElementById("questionForm").onsubmit = function(e) {
-    e.preventDefault();  // Prevent form submission (no page refresh)
-
-    // Show the popup asking for email
-    document.getElementById("popup").style.display = "flex";
-}
-
-// Close the popup when the close button is clicked
-function closePopup() {
-    document.getElementById("popup").style.display = "none";
-}
-
-// Handle form submission for email
-document.getElementById("emailForm").onsubmit = function(e) {
-    e.preventDefault();  // Prevent form submission (no page refresh)
-    var email = document.getElementById("email").value;
-
-    // You can handle AJAX submission to send the email or process the data as needed
-    alert("Thank you! We will send your answer to: " + email);
-
-    // Close the popup after submission
-    closePopup();
-}

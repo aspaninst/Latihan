@@ -96,6 +96,17 @@ document.addEventListener('DOMContentLoaded', () => {
   generateCalendar(currentMonth, currentYear);
 });
 
+document.getElementById('see-more-button').addEventListener('click', function() {
+    const moreCards = document.getElementById('more-cards');
+    const seeMoreButton = document.getElementById('see-more-button');
+    
+    // Tampilkan lebih banyak kartu
+    moreCards.style.display = 'flex';
+    
+    // Sembunyikan tombol "See More"
+    seeMoreButton.style.display = 'none';
+});
+
 // Fungsi untuk menampilkan lebih banyak kartu
 document.getElementById('see-more-button').addEventListener('click', function() {
     const moreCards = document.getElementById('more-cards');

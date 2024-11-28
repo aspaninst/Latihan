@@ -95,9 +95,6 @@ a.active, a:hover {
   transition: background-color 0.5s;
 }
 
-
-/* Dropdown Button */
-/* Dropdown Button */
 /* Tombol Dropdown */
 .dropbtn {
     font-family: 'Times New Roman', serif;
@@ -116,43 +113,79 @@ a.active, a:hover {
     background-color: #444; /* Warna abu yang sedikit lebih terang */
 }
 
-/* Kontainer Dropdown */
+/* Container Dropdown */
 .dropdown {
     float: left;
-    position: relative; /* Agar dropdown-content posisinya relatif terhadap kontainer */
+    position: relative;
+    display: inline-block; /* Agar dropdown bisa berdampingan */
+    margin: 10px; /* Jarak antar dropdown */
+}
+
+/* Tombol dropdown */
+.dropdown button {
+    background-color: #4CAF50; /* Hijau lembut */
+    color: white; /* Teks putih */
+    padding: 12px 20px; /* Padding tombol */
+    font-size: 16px; /* Ukuran font lebih besar */
+    border: none; /* Hilangkan border */
+    border-radius: 5px; /* Sudut tombol membulat */
+    cursor: pointer; /* Menampilkan kursor pointer */
+    font-family: Arial, sans-serif; /* Font default */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+}
+
+/* Hover pada tombol dropdown */
+.dropdown button:hover {
+    background-color: #45a049; /* Hijau lebih gelap saat dihover */
 }
 
 /* Dropdown Content */
 .dropdown-content {
     display: none; /* Tersembunyi secara default */
     position: absolute;
-    background-color: #f9f9f9;
-    min-width: 200px; /* Lebar dropdown */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+    background-color: white; /* Latar belakang putih */
+    min-width: 220px; /* Lebar dropdown */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Bayangan lembut */
     border-radius: 5px; /* Sudut membulat */
-    z-index: 1; /* Agar tampil di atas elemen lainnya */
+    z-index: 1; /* Tampilkan di atas elemen lainnya */
     overflow: hidden; /* Hilangkan elemen yang meluap */
+    border: 1px solid #ddd; /* Border tipis untuk kontainer */
+    margin-top: 5px; /* Jarak kecil di bawah tombol */
 }
 
 /* Tautan di dalam dropdown */
 .dropdown-content a {
     font-family: Arial, sans-serif;
-    font-size: 15px; /* Ukuran font lebih kecil */
+    font-size: 14px; /* Ukuran font yang pas */
     color: #333; /* Teks abu gelap */
     padding: 10px 15px; /* Spasi dalam tautan */
     text-decoration: none; /* Hilangkan garis bawah */
     display: block; /* Membuat tautan mengambil seluruh lebar */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Efek transisi */
 }
 
 /* Hover pada tautan */
 .dropdown-content a:hover {
-    background-color: #e0e0e0; /* Warna abu terang saat dihover */
-    color: black; /* Warna teks lebih gelap */
+    background-color: #f1f1f1; /* Warna abu terang saat dihover */
+    color: #000; /* Warna teks lebih gelap */
 }
 
 /* Menampilkan dropdown saat hover */
 .dropdown:hover .dropdown-content {
     display: block;
+    animation: fadeIn 0.3s ease; /* Efek animasi fade-in */
+}
+
+/* Animasi fade-in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px); /* Mulai dari posisi lebih tinggi */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Kembali ke posisi semula */
+    }
 }
 
 .checkbtn {

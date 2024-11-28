@@ -1,4 +1,4 @@
-function myfunction() {
+ function myfunction() {
   // Menampilkan popup
   var popup = document.getElementById('popup');
   var sharkImage = document.getElementById('sharkImage');
@@ -147,6 +147,25 @@ document.getElementById('joinForm').addEventListener('submit', function(event) {
   alert('Name: ' + name + '\nAddress: ' + address);
   document.getElementById('joinPopup').style.display = 'none';
 });
+
+// Namespace untuk tambahan fungsi Mitigasi
+const SharkMitigation = (() => {
+  // Fungsi untuk mengatur tampilan teks "Mitigasi Ancaman terhadap Hiu"
+  const initializeThreatInfo = () => {
+    const threatButton = document.getElementById('threatBtn');
+    const threatInfo = document.getElementById('threatInfo');
+
+    if (threatButton && threatInfo) {
+      threatButton.addEventListener('click', () => {
+        // Toggle visibility of threatInfo
+        if (threatInfo.style.display === 'none' || threatInfo.style.display === '') {
+          threatInfo.style.display = 'block';
+        } else {
+          threatInfo.style.display = 'none';
+        }
+      });
+    }
+  };
 
   // Fungsi untuk membuat animasi atau efek tambahan jika diperlukan
   const addAnimation = () => {

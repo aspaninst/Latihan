@@ -149,24 +149,51 @@ document.getElementById('joinForm').addEventListener('submit', function(event) {
   document.getElementById('joinPopup').style.display = 'none';
 });
 
-// Namespace untuk tambahan fungsi Mitigasi
+// Namespace khusus untuk mitigasi ancaman hiu
 const SharkMitigation = (() => {
-  // Fungsi untuk mengatur tampilan teks "Mitigasi Ancaman terhadap Hiu"
+  // Fungsi untuk toggle tampilan teks "Mitigasi Ancaman terhadap Hiu"
   const initializeThreatInfo = () => {
-    const threatButton = document.getElementById('threatBtn');
-    const threatInfo = document.getElementById('threatInfo');
+    const threatButton = document.getElementById('threatBtn'); // Tombol yang ada
+    const threatInfo = document.getElementById('threatInfo'); // Area informasi mitigasi
 
+    // Pastikan elemen ada sebelum ditambahkan event
     if (threatButton && threatInfo) {
       threatButton.addEventListener('click', () => {
-        // Toggle visibility of threatInfo
-        if (threatInfo.style.display === 'none' || threatInfo.style.display === '') {
-          threatInfo.style.display = 'block';
-        } else {
-          threatInfo.style.display = 'none';
-        }
+        // Toggle visibilitas menggunakan class CSS
+        threatInfo.classList.toggle('visible');
+        threatInfo.classList.toggle('hidden');
       });
     }
   };
+
+  // Fungsi untuk menambahkan efek hover pada tombol mitigasi
+  const addButtonHoverEffect = () => {
+    const threatButton = document.getElementById('threatBtn'); // Tombol mitigasi
+    if (threatButton) {
+      threatButton.addEventListener('mouseover', () => {
+        threatButton.style.backgroundColor = '#d1e7e7'; // Warna hijau muda saat hover
+      });
+      threatButton.addEventListener('mouseout', () => {
+        threatButton.style.backgroundColor = ''; // Kembali ke default
+      });
+    }
+  };
+
+  // Fungsi inisialisasi mitigasi
+  const init = () => {
+    initializeThreatInfo();
+    addButtonHoverEffect();
+  };
+
+  // Public API
+  return { init };
+})();
+
+// Panggil inisialisasi setelah DOM siap
+document.addEventListener('DOMContentLoaded', () => {
+  SharkMitigation.init();
+});
+
 
   // Fungsi untuk membuat animasi atau efek tambahan jika diperlukan
   const addAnimation = () => {

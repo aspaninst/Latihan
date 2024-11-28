@@ -100,15 +100,16 @@ transition: background-color 0.5s;
 .dropbtn {
     color: white;
     font-size: 17px;
-    padding: 10px 15px;
-    border-radius: 3px;
     text-transform: uppercase;
-    margin-top: -40px; /
+    margin-top: -50px; /
     cursor: pointer; /* Kursor pointer */
+    border: none;
 }
 .dropbtn:hover {
     background: black;
     transition: background-color 0.5s;
+    padding: 10px 15px;
+    border-radius: 3px;
 }
 /* Kontainer Dropdown */
 .dropdown {
@@ -125,8 +126,8 @@ display: none; /* Tersembunyi secara default */
     background-color: #ffffff; /* Latar belakang putih */
     position: absolute;
     background-color: #ffffff;
-min-width: 200px; /* Lebar dropdown */
-box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Bayangan lembut */
+    min-width: 200px; /* Lebar dropdown */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Bayangan lembut */
     z-index: 1; /* Supaya berada di atas elemen lain */
     border-radius: 5px; /* Sudut membulat */
     border: 1px solid #ddd; /* Border tipis */
@@ -143,7 +144,7 @@ box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Bayangan lembut */
     padding: 12px 16px; /* Spasi dalam tautan */
     display: block; /* Setiap item menjadi blok */
     padding: 12px 16px;
-text-decoration: none; /* Hilangkan garis bawah */
+    text-decoration: none; /* Hilangkan garis bawah */
     display: block; /* Tautan mengambil seluruh lebar */
     font-family: Arial, sans-serif; /* Font standar */
     font-size: 14px; /* Ukuran font */
@@ -162,8 +163,6 @@ text-decoration: none; /* Hilangkan garis bawah */
     background-color: #f1f1f1; /* Warna abu terang saat hover */
     color: #000;
 }
-
-/* Tampilkan Dropdown Saat Hover */
 /* Tampilkan Dropdown saat Hover */
 .dropdown:hover .dropdown-content {
     display: block; /* Tampilkan dropdown */

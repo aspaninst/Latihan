@@ -1,434 +1,440 @@
-     <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="x.css">
-    <title>Shark Odyssey</title>
-    <link rel="icon" type="image/x-icon" href="logohiu.jpeg">
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-    <script src="scripts/script.js" defer></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="x.css">
+<title>Shark Odyssey</title>
+<link rel="icon" type="image/x-icon" href="logohiu.jpeg">
+<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+<script src="scripts/script.js" defer></script>
 </head>
 <body>
 <!-- Navigasi Bar --> 
 <nav>
-    <label class="logo"><div class="topnav"><input type="text" placeholder="Search.."></div><!-- Search Bar --><h1 id="title">Shark Odyssey</h1><br><p id="title1">"Indonesia merupakan negara penangkap hiu terbesar di dunia."<br><br>Berdasarkan data statistik Badan Pangan Dunia (FAO), Indonesia menyumbang lebih dari sepuluh persen terhadap tangkapan hiu dunia, sehingga selalu menduduki posisi pertama dari paling tidak 40 negara penangkap hiu selama lebih dari satu dekade terakhir.</p> 
-    <div class="navigasi"><button onclick="myfunction()" style="font-family:serif; font-size: 17px">Helloww</button></div>
+<label class="logo"><div class="topnav"><input type="text" placeholder="Search.."></div><!-- Search Bar --><h1 id="title">Shark Odyssey</h1><br><p id="title1">"Indonesia merupakan negara penangkap hiu terbesar di dunia."<br><br>Berdasarkan data statistik Badan Pangan Dunia (FAO), Indonesia menyumbang lebih dari sepuluh persen terhadap tangkapan hiu dunia, sehingga selalu menduduki posisi pertama dari paling tidak 40 negara penangkap hiu selama lebih dari satu dekade terakhir.</p> 
+<div class="navigasi"><button onclick="myfunction()" style="font-family:serif; font-size: 17px">Helloww</button></div>
 
-    <!-- Popup content -->
-    <div id="popup" class="popup">
-        <div class="popup-content">
-            <button class="close-btn" onclick="closePopup()">close</button>
-            <span id="popupText">Helloo Shark Lovers!</span> <!-- Teks yang akan muncul -->
-            <img id="sharkImage" src="" alt="Shark Image"> <!-- Gambar yang akan muncul -->
-        </div>
-    </div></label>
-    <input type="checkbox" id="check">
-    <label for="check" class="checkbtn">
-        <i class="fa fa-bars"></i>
-    </label>
-    <ul>
-    <li><a class="active" href="#">Home</a></li>
-    <li><a href="https://aspaninst.github.io/Latihan/Aboutus.html">About</a></li>
-    <li><a href="https://aspaninst.github.io/Latihan/SharkMyths.html">MYTHS</a></li>
-    <li><a href="Aboutus.html#GALLERY">GALERY</a></li>
-    <li>
-    <div class="dropdown">
-    <button class="dropbtn">CONTACT<i class="fa fa-caret-down"></i></button>
-    <div class="dropdown-content">
-        <a href="https://mail.google.com/mail/u/0/?hl=en" target="_blank">Email</a>
-        <a href="https://www.instagram.com/ggraeen/" target="_blank">Instagram</a>
-        <a href="https://www.facebook.com/" target="_blank">Facebook</a>
-    </div>
-    </div>
-    </li><script src="scripts/script.js" defer></script>
-    </ul>
-    </nav> 
+<!-- Popup content -->
+<div id="popup" class="popup">
+<div class="popup-content">
+<button class="close-btn" onclick="closePopup()">close</button>
+<span id="popupText">Helloo Shark Lovers!</span> <!-- Teks yang akan muncul -->
+<img id="sharkImage" src="" alt="Shark Image"> <!-- Gambar yang akan muncul -->
+</div>
+</div></label>
+<input type="checkbox" id="check">
+<label for="check" class="checkbtn">
+<i class="fa fa-bars"></i>
+</label>
+<ul>
+<li><a class="active" href="#">Home</a></li>
+<li><a href="https://aspaninst.github.io/Latihan/Aboutus.html">About</a></li>
+<li><a href="https://aspaninst.github.io/Latihan/SharkMyths.html">MYTHS</a></li>
+<li><a href="Aboutus.html#GALLERY">GALERY</a></li>
+<li>
+<div class="dropdown">
+<button class="dropbtn">CONTACT<i class="fa fa-caret-down"></i></button>
+<div class="dropdown-content">
+<a href="https://mail.google.com/mail/u/0/?hl=en" target="_blank">Email</a>
+<a href="https://www.instagram.com/ggraeen/" target="_blank">Instagram</a>
+<a href="https://www.facebook.com/" target="_blank">Facebook</a>
+</div>
+</div>
+</li><script src="scripts/script.js" defer></script>
+</ul>
+</nav> 
 
-    <div class="wrapper">
-    <!-- Sidebar -->
-    <div id="sidebar" class="sidebar">
-    <div class="btn-group">
-      <button onclick="location.href='#jenis'">Eksplore Shark Species</button>
-      <button onclick="location.href='#gabung'">Join Us</button>
-      <button onclick="location.href='#latestnews'">Latest News</button>
-    </div>
+<div class="wrapper">
+<!-- Sidebar -->
+<div id="sidebar" class="sidebar">
+<div class="btn-group">
+<button onclick="location.href='#jenis'">Eksplore Shark Species</button>
+<button onclick="location.href='#gabung'">Join Us</button>
+<button onclick="location.href='#latestnews'">Latest News</button>
+</div>
 
 <div class="mitigasi">
-  <h2 id="mitigasitext">Mitigasi Ancaman terhadap Hiu</h2>
-  <p>Pelajari lebih lanjut tentang cara kita bisa membantu melindungi hiu.</p>
+<h2 id="mitigasitext">Mitigasi Ancaman terhadap Hiu</h2>
+<p>Pelajari lebih lanjut tentang cara kita bisa membantu melindungi hiu.</p>
 
-  <!-- Area untuk Menampilkan Informasi -->
-  <div id="threatInfo" class="hidden">
-    <ul>
-      <li><strong>Penangkapan Ilegal:</strong> Hiu sering diburu untuk siripnya, yang menyebabkan penurunan populasi mereka.</li>
-      <li><strong>Polusi Laut:</strong> Sampah plastik dan limbah kimia mencemari habitat hiu.</li>
-      <li><strong>Perusakan Terumbu Karang:</strong> Hiu membutuhkan ekosistem terumbu karang yang sehat untuk hidup.</li>
-    </ul>
-    <br>
-    <p style="text-align: center; color: #1d2b2b"><b>Bagaimana Anda bisa membantu?</b></p>
-    <ul>
-      <li>1. Dukung organisasi konservasi hiu.</li>
-      <li>2. Kurangi penggunaan plastik dan buang sampah dengan bijak.</li>
-      <li>3. Pelajari dan sebarkan informasi tentang hiu dan pentingnya mereka dalam ekosistem laut.</li>
-    </ul>
-  </div>
+<!-- Tombol Interaktif untuk Menampilkan Info -->
+<div class="mitigasi">
+<button id="threatBtn">Ancaman terhadap Hiu</button>
+</div>
 
-      <!-- Jam -->
-      <div class="clock">
-        <h3>Current Time<br><br></h3>
-        <p id="time"></p>
-      </div>
-      
-      <!-- Kalender -->
-      <div class="calendar-container">
-    <h2 id="calendar-month-year"></h2>
-    <table class="calendar">
-      <thead>
-        <tr>
-          <th>Sun</th>
-          <th>Mon</th>
-          <th>Tue</th>
-          <th>Wed</th>
-          <th>Thu</th>
-          <th>Fri</th>
-          <th>Sat</th>
-        </tr>
-      </thead>
-      <tbody id="calendar-body">
-        <!-- Calendar will be dynamically generated here -->
-      </tbody>
-    </table><script src="script.js" defer></script>
-  </div>
-      
-      <!-- Form Upload Pertanyaan -->
-      <!-- Question Form -->
+<!-- Area untuk Menampilkan Informasi -->
+<div id="threatInfo" class="hidden">
+<ul>
+<li><strong>Penangkapan Ilegal:</strong> Hiu sering diburu untuk siripnya, yang menyebabkan penurunan populasi mereka.</li>
+<li><strong>Polusi Laut:</strong> Sampah plastik dan limbah kimia mencemari habitat hiu.</li>
+<li><strong>Perusakan Terumbu Karang:</strong> Hiu membutuhkan ekosistem terumbu karang yang sehat untuk hidup.</li>
+</ul>
+<br>
+<p style="text-align: center; color: #1d2b2b"><b>Bagaimana Anda bisa membantu?</b></p>
+<ul>
+<li>1. Dukung organisasi konservasi hiu.</li>
+<li>2. Kurangi penggunaan plastik dan buang sampah dengan bijak.</li>
+<li>3. Pelajari dan sebarkan informasi tentang hiu dan pentingnya mereka dalam ekosistem laut.</li>
+</ul>
+</div>
+</div><script src="scripts/script.js" defer></script>
+
+<!-- Jam -->
+<div class="clock">
+<h3>Current Time<br><br></h3>
+<p id="time"></p>
+</div>
+
+<!-- Kalender -->
+<div class="calendar-container">
+<h2 id="calendar-month-year"></h2>
+<table class="calendar">
+<thead>
+<tr>
+<th>Sun</th>
+<th>Mon</th>
+<th>Tue</th>
+<th>Wed</th>
+<th>Thu</th>
+<th>Fri</th>
+<th>Sat</th>
+</tr>
+</thead>
+<tbody id="calendar-body">
+<!-- Calendar will be dynamically generated here -->
+</tbody>
+</table><script src="script.js" defer></script>
+</div>
+
+<!-- Form Upload Pertanyaan -->
+<!-- Question Form -->
 <div class="upload">
-    <h3>Any questions?</h3>
-    <form id="questionForm" action="#">
-        <textarea name="question" id="question" placeholder="Write your question about sharks ..." rows="4" cols="30"></textarea><br>
-        <input type="submit" value="Submit">
-    </form>
+<h3>Any questions?</h3>
+<form id="questionForm" action="#">
+<textarea name="question" id="question" placeholder="Write your question about sharks ..." rows="4" cols="30"></textarea><br>
+<input type="submit" value="Submit">
+</form>
 </div>
 
 <div class="scroll-vert">
-  <img src="images/g8.jpg">
-  <img src="images/g10.jpg">
-  <img src="images/g11.jpg">
-  <img src="images/g12.jpg">
-  <img src="images/g13.jpg">
-  <img src="images/g1.jpg">
-  <img src="images/g2.jpg">
-  <img src="images/g3.jpg">
-  <img src="images/g4.jpg">
-  <img src="images/g5.jpg">
-  <img src="images/g6.jpg">
-  <img src="images/g7.jpg">
+<img src="images/g8.jpg">
+<img src="images/g10.jpg">
+<img src="images/g11.jpg">
+<img src="images/g12.jpg">
+<img src="images/g13.jpg">
+<img src="images/g1.jpg">
+<img src="images/g2.jpg">
+<img src="images/g3.jpg">
+<img src="images/g4.jpg">
+<img src="images/g5.jpg">
+<img src="images/g6.jpg">
+<img src="images/g7.jpg">
 </div>
 
 <div class="moregalery">
-  <button onclick="location.href='Aboutus.html#GALLERY'">More Galery</button>
+<button onclick="location.href='Aboutus.html#GALLERY'">More Galery</button>
 </div></div>
 
 
 <div class="main-content"> 
 <div class="container1">
 <div class="importance-container">
-    <div class="importance-overview" data-name="p-2">
-        <h2>Shark World Overview</h2>
-    </div>
-    <div class="importance-content">
-        <p>Setiap tahun, lebih dari 100 juta hiu dibunuh, sebagian besar untuk memenuhi permintaan pasar sirip hiu yang sangat tinggi, terutama di Asia. Banyak di antara mereka ditangkap, diambil siripnya, dan kemudian dibuang kembali ke laut dalam keadaan sekarat. Praktik ini telah menyebabkan populasi hiu menurun drastis, dengan beberapa spesies yang kini terancam punah. Jika kita tidak segera bertindak, ekosistem laut akan kehilangan salah satu penjaga keseimbangan terpentingnya. Mari bersama-sama menjaga kelangsungan hidup hiu dan melindungi masa depan lautan kita untuk generasi mendatang.</p>
-    </div>
+<div class="importance-overview" data-name="p-2">
+<h2>Shark World Overview</h2>
+</div>
+<div class="importance-content">
+<p>Setiap tahun, lebih dari 100 juta hiu dibunuh, sebagian besar untuk memenuhi permintaan pasar sirip hiu yang sangat tinggi, terutama di Asia. Banyak di antara mereka ditangkap, diambil siripnya, dan kemudian dibuang kembali ke laut dalam keadaan sekarat. Praktik ini telah menyebabkan populasi hiu menurun drastis, dengan beberapa spesies yang kini terancam punah. Jika kita tidak segera bertindak, ekosistem laut akan kehilangan salah satu penjaga keseimbangan terpentingnya. Mari bersama-sama menjaga kelangsungan hidup hiu dan melindungi masa depan lautan kita untuk generasi mendatang.</p>
+</div>
 </div><br><hr style="background-color: #0C1A1A"><hr style="background-color: #0C1A1A"><br><br>
 
 
 <div class="main-container">
-    <section id="species" class="section">
-        <h5 id="jenis" style="text-align: center;">Explore Shark Species</h5><hr style="background-color: #0C1A1A"><hr style="background-color: #0C1A1A"><br>
-        
-        <div class="card-container">
-        <div class="card">
-            <h3>Blacknose shark</h3><br>
-            <img src="/Latihan/images/h1.jpg" alt="Blacknose shark"><br><br>
-            <p>Ditemukan di perairan hangat Atlantik Barat, hiu kecil ini memiliki tanda hitam di ujung hidungnya. Tumbuh hingga 1,5 meter, memakan ikan kecil dan krustasea.</p>
-        </div>
-        <div class="card">
-            <h3>Blacktip reef shark</h3><br>
-            <img src="/Latihan/images/h2.jpg" alt="Blacktip reef shark"><br><br>
-            <p>Hiu ini sering ditemukan di perairan dangkal dan terumbu karang Indo-Pasifik. Memiliki ujung sirip hitam mencolok, tumbuh hingga 1,6 meter, memangsa ikan kecil.</p>
-        </div>
-        <div class="card">
-            <h3>Blacktip Shark</h3><br>
-            <img src="/Latihan/images/h3.jpg" alt="Blacknose shark"><br><br>
-            <p>Sering berada di dekat pantai, hiu ini memiliki ujung hitam pada siripnya. Tumbuh hingga sekitar 2,5 meter dan memangsa ikan kecil, sangat cepat dan lincah saat berburu.</p>
-        </div>
-        <div class="card">
-            <h3>Blue Shark</h3><br>
-            <img src="/Latihan/images/h4.jpg" alt="Blacktip reef shark"><br><br>
-            <p>Ditemukan di perairan samudra seluruh dunia, hiu langsing ini berwarna biru terang. Tumbuh hingga 3 meter dan memakan ikan kecil serta cumi-cumi, sering bermigrasi jauh.</p>
-        </div>
-        <div class="card">
-            <h3>Brown Shyshark</h3><br>
-            <img src="/Latihan/images/h5.jpg" alt="Blacknose shark"><br><br>
-            <p>Hiu kecil yang pemalu ini ditemukan di perairan Afrika Selatan. Dengan tubuh cokelat dan bercak gelap, tumbuh hingga sekitar 60 cm dan memakan krustasea serta ikan kecil.</p>
-        </div>
-        <div class="card">
-            <h3>Bull Shark</h3><br>
-            <img src="/Latihan/images/h6.jpg" alt="Blacktip reef shark"><br><br>
-            <p>Hiu agresif ini dapat hidup di air tawar dan air asin, sering terlihat di dekat pantai dan sungai. Tumbuh hingga 3,5 meter dan memangsa ikan besar serta hewan laut lainnya.</p>
-        </div>
-        <div class="card">
-            <h3>Caribbean Reef Shark</h3><br>
-            <img src="/Latihan/images/h7.jpg" alt="Blacknose shark"><br><br>
-            <p>Ditemukan di sekitar terumbu karang Karibia, hiu ini memiliki tubuh ramping dengan sirip punggung tinggi. Tumbuh hingga sekitar 3 meter, memangsa ikan karang dan cephalopoda.</p>
-        </div>
-        <div class="card">
-            <h3>Bronze Whaler Shark</h3><br>
-            <img src="/Latihan/images/h8.jpg" alt="Blacktip reef shark"><br><br>
-            <p>Ditemukan di perairan pesisir hangat, memiliki warna perunggu di punggungnya. Tumbuh hingga 3,3 meter, memakan ikan pelagis dan cephalopoda, sering dalam kelompok.</p>
-        </div>
-        <div class="card">
-            <h3>Dusky Shark</h3><br>
-            <img src="/Latihan/images/h9.jpg" alt="Blue shark"><br><br>
-            <p>Hiu besar ini ditemukan di samudra seluruh dunia dengan warna abu-abu gelap. Tumbuh hingga sekitar 4 meter dan memangsa ikan besar serta hiu lainnya.</p>
-        </div>
-            
-    <!-- Kartu Tambahan (akan tampil di bawah setelah klik "See More") -->
-    <div class="more-cards" id="more-cards">
-    <div class="card">
-        <h3>Dusky Shark</h3><br>
-        <img src="/Latihan/images/h9.jpg" alt="Blue shark"><br>
-        <p>Hiu besar ini ditemukan di samudra seluruh dunia dengan warna abu-abu gelap. Tumbuh hingga sekitar 4 meter dan memangsa ikan besar serta hiu lainnya.</p>
-    </div>
-    <div class="card">
-        <h3>Galapagos Shark</h3><br>
-        <img src="/Latihan/images/h10.jpg" alt="Blacknose shark"><br><br>
-        <p>Hiu besar yang hidup di perairan tropis, sering ditemukan di sekitar pulau-pulau. Tumbuh hingga sekitar 3,7 meter, memangsa ikan karang dan hewan laut lainnya.</p>
-    </div>
-    <div class="card">
-        <h3>Great Hammerhead Shark</h3><br>
-        <img src="/Latihan/images/h11.jpg" alt="Blacktip reef shark"><br><br>
-        <p>Hiu unik dengan kepala berbentuk palu yang ditemukan di perairan hangat seluruh dunia. Tumbuh hingga 6 meter dan memangsa ikan kecil, pari, dan hewan laut.</p>
-    </div>
-    <div class="card">
-        <h3>Grey Reef Shark</h3><br>
-        <img src="/Latihan/images/h12.jpg" alt="Blacktip reef shark"><br><br>
-        <p>Hiu ini sering terlihat di sekitar terumbu karang di Indo-Pasifik. Tumbuh hingga 2 meter, memiliki ujung sirip gelap, dan memangsa ikan karang serta cephalopoda.</p>
-    </div>
-    <div class="card">
-        <h3>Bronze Whaler Shark</h3><br>
-        <img src="/Latihan/images/h8.jpg" alt="Blacktip reef shark"><br><br>
-        <p>Ditemukan di perairan pesisir hangat, memiliki warna perunggu di punggungnya. Tumbuh hingga 3,3 meter, memakan ikan pelagis dan cephalopoda, sering dalam kelompok.</p>
-    </div>
-    <div class="card">
-        <h3>Dusky Shark</h3><br>
-        <img src="/Latihan/images/h9.jpg" alt="Blue shark"><br><br>
-        <p>Hiu besar ini ditemukan di samudra seluruh dunia dengan warna abu-abu gelap. Tumbuh hingga sekitar 4 meter dan memangsa ikan besar serta hiu lainnya.</p>
-    </div>
+<section id="species" class="section">
+<h5 id="jenis" style="text-align: center;">Explore Shark Species</h5><hr style="background-color: #0C1A1A"><hr style="background-color: #0C1A1A"><br>
+
+<div class="card-container">
+<div class="card">
+<h3>Blacknose shark</h3><br>
+<img src="/Latihan/images/h1.jpg" alt="Blacknose shark"><br><br>
+<p>Ditemukan di perairan hangat Atlantik Barat, hiu kecil ini memiliki tanda hitam di ujung hidungnya. Tumbuh hingga 1,5 meter, memakan ikan kecil dan krustasea.</p>
 </div>
-    <button id="see-more-button" class="see-more-button">See More >></button>
+<div class="card">
+<h3>Blacktip reef shark</h3><br>
+<img src="/Latihan/images/h2.jpg" alt="Blacktip reef shark"><br><br>
+<p>Hiu ini sering ditemukan di perairan dangkal dan terumbu karang Indo-Pasifik. Memiliki ujung sirip hitam mencolok, tumbuh hingga 1,6 meter, memangsa ikan kecil.</p>
+</div>
+<div class="card">
+<h3>Blacktip Shark</h3><br>
+<img src="/Latihan/images/h3.jpg" alt="Blacknose shark"><br><br>
+<p>Sering berada di dekat pantai, hiu ini memiliki ujung hitam pada siripnya. Tumbuh hingga sekitar 2,5 meter dan memangsa ikan kecil, sangat cepat dan lincah saat berburu.</p>
+</div>
+<div class="card">
+<h3>Blue Shark</h3><br>
+<img src="/Latihan/images/h4.jpg" alt="Blacktip reef shark"><br><br>
+<p>Ditemukan di perairan samudra seluruh dunia, hiu langsing ini berwarna biru terang. Tumbuh hingga 3 meter dan memakan ikan kecil serta cumi-cumi, sering bermigrasi jauh.</p>
+</div>
+<div class="card">
+<h3>Brown Shyshark</h3><br>
+<img src="/Latihan/images/h5.jpg" alt="Blacknose shark"><br><br>
+<p>Hiu kecil yang pemalu ini ditemukan di perairan Afrika Selatan. Dengan tubuh cokelat dan bercak gelap, tumbuh hingga sekitar 60 cm dan memakan krustasea serta ikan kecil.</p>
+</div>
+<div class="card">
+<h3>Bull Shark</h3><br>
+<img src="/Latihan/images/h6.jpg" alt="Blacktip reef shark"><br><br>
+<p>Hiu agresif ini dapat hidup di air tawar dan air asin, sering terlihat di dekat pantai dan sungai. Tumbuh hingga 3,5 meter dan memangsa ikan besar serta hewan laut lainnya.</p>
+</div>
+<div class="card">
+<h3>Caribbean Reef Shark</h3><br>
+<img src="/Latihan/images/h7.jpg" alt="Blacknose shark"><br><br>
+<p>Ditemukan di sekitar terumbu karang Karibia, hiu ini memiliki tubuh ramping dengan sirip punggung tinggi. Tumbuh hingga sekitar 3 meter, memangsa ikan karang dan cephalopoda.</p>
+</div>
+<div class="card">
+<h3>Bronze Whaler Shark</h3><br>
+<img src="/Latihan/images/h8.jpg" alt="Blacktip reef shark"><br><br>
+<p>Ditemukan di perairan pesisir hangat, memiliki warna perunggu di punggungnya. Tumbuh hingga 3,3 meter, memakan ikan pelagis dan cephalopoda, sering dalam kelompok.</p>
+</div>
+<div class="card">
+<h3>Dusky Shark</h3><br>
+<img src="/Latihan/images/h9.jpg" alt="Blue shark"><br><br>
+<p>Hiu besar ini ditemukan di samudra seluruh dunia dengan warna abu-abu gelap. Tumbuh hingga sekitar 4 meter dan memangsa ikan besar serta hiu lainnya.</p>
+</div>
+
+<!-- Kartu Tambahan (akan tampil di bawah setelah klik "See More") -->
+<div class="more-cards" id="more-cards">
+<div class="card">
+<h3>Dusky Shark</h3><br>
+<img src="/Latihan/images/h9.jpg" alt="Blue shark"><br>
+<p>Hiu besar ini ditemukan di samudra seluruh dunia dengan warna abu-abu gelap. Tumbuh hingga sekitar 4 meter dan memangsa ikan besar serta hiu lainnya.</p>
+</div>
+<div class="card">
+<h3>Galapagos Shark</h3><br>
+<img src="/Latihan/images/h10.jpg" alt="Blacknose shark"><br><br>
+<p>Hiu besar yang hidup di perairan tropis, sering ditemukan di sekitar pulau-pulau. Tumbuh hingga sekitar 3,7 meter, memangsa ikan karang dan hewan laut lainnya.</p>
+</div>
+<div class="card">
+<h3>Great Hammerhead Shark</h3><br>
+<img src="/Latihan/images/h11.jpg" alt="Blacktip reef shark"><br><br>
+<p>Hiu unik dengan kepala berbentuk palu yang ditemukan di perairan hangat seluruh dunia. Tumbuh hingga 6 meter dan memangsa ikan kecil, pari, dan hewan laut.</p>
+</div>
+<div class="card">
+<h3>Grey Reef Shark</h3><br>
+<img src="/Latihan/images/h12.jpg" alt="Blacktip reef shark"><br><br>
+<p>Hiu ini sering terlihat di sekitar terumbu karang di Indo-Pasifik. Tumbuh hingga 2 meter, memiliki ujung sirip gelap, dan memangsa ikan karang serta cephalopoda.</p>
+</div>
+<div class="card">
+<h3>Bronze Whaler Shark</h3><br>
+<img src="/Latihan/images/h8.jpg" alt="Blacktip reef shark"><br><br>
+<p>Ditemukan di perairan pesisir hangat, memiliki warna perunggu di punggungnya. Tumbuh hingga 3,3 meter, memakan ikan pelagis dan cephalopoda, sering dalam kelompok.</p>
+</div>
+<div class="card">
+<h3>Dusky Shark</h3><br>
+<img src="/Latihan/images/h9.jpg" alt="Blue shark"><br><br>
+<p>Hiu besar ini ditemukan di samudra seluruh dunia dengan warna abu-abu gelap. Tumbuh hingga sekitar 4 meter dan memangsa ikan besar serta hiu lainnya.</p>
+</div>
+</div>
+<button id="see-more-button" class="see-more-button">See More >></button>
 </section><script src="script.js" defer></script>
 </div></div>
 
- <div class="up-art"><section class="upload-art">
-        <h2 style="color: white;">Upload Your Own Art</h2><br><br>
-        <form action="/submit-art" method="post" enctype="multipart/form-data">
-            <input type="file" name="artwork" required>
-            <input type="text" name="artist-name" placeholder="Your Name" required>
-            <button type="submit" style="padding: 2px; background-color: white; color: black; border-radius: 3px">Upload</button>
-        </form>
-    </section><br><br><hr><br><hr><br>
+<div class="up-art"><section class="upload-art">
+<h2 style="color: white;">Upload Your Own Art</h2><br><br>
+<form action="/submit-art" method="post" enctype="multipart/form-data">
+<input type="file" name="artwork" required>
+<input type="text" name="artist-name" placeholder="Your Name" required>
+<button type="submit" style="padding: 2px; background-color: white; color: black; border-radius: 3px">Upload</button>
+</form>
+</section><br><br><hr><br><hr><br>
 
 <div class="Quotes">
-    <h1 id="gabung">Protect Our Sharks</h1>
-    <p id="Quotes">Join us in conserving these magnificent creatures</p>
+<h1 id="gabung">Protect Our Sharks</h1>
+<p id="Quotes">Join us in conserving these magnificent creatures</p>
 </div>
 <!-- Button Join -->
 <button id="joinBtn">Let's Join With Us</button><br><br><br><hr><br><hr></div>
 
 <!-- Popup Form -->
 <div id="joinPopup" class="popup">
-  <div class="popup-content">
-    <span id="closeJoinPopup" class="close-btn">&times;</span>
-    <h2>Join Us!</h2>
-    <form id="joinForm">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
-      <br>
-      <label for="address">Address:</label>
-      <input type="text" id="address" name="address" required>
-      <br>
-      <label for="address">Reason for joining:</label>
-      <input type="text" id="Reason for joining" name="Reason for joining" required>
-      <br><br>
-      <button type="submit">Submit</button>
-      <button type="button" id="closeJoinFormBtn">Close</button>
-    </form>
-  </div>
+<div class="popup-content">
+<span id="closeJoinPopup" class="close-btn">&times;</span>
+<h2>Join Us!</h2>
+<form id="joinForm">
+<label for="name">Name:</label>
+<input type="text" id="name" name="name" required>
+<br>
+<label for="address">Address:</label>
+<input type="text" id="address" name="address" required>
+<br>
+<label for="address">Reason for joining:</label>
+<input type="text" id="Reason for joining" name="Reason for joining" required>
+<br><br>
+<button type="submit">Submit</button>
+<button type="button" id="closeJoinFormBtn">Close</button>
+</form>
+</div>
 </div><br><br><br><br>
 
 
 <div class="berita">
-   <section id="blog" class="section">
-    <h2 id="latestnews" style="text-align: center;">Latest News & Updates</h2>
-    <div class="blog-container">
-        <div class="blog-post">
-            <img src="/Latihan/images/news1.jpg" alt="Blog Post 1">
-            <div class="blog-content">
-                <h3 style="color: white;">Manusia Bunuh 80 Juta Hiu Per Tahun, Regulasi Tak Mengurangi Penangkapan</h3>
-                <hr><br>
-                <p>Sekitar 80 juta hiu diperkirakan dibunuh setiap tahunnya. Sebanyak 25 juta ekor merupakan spesies yang terancam punah.</p>
-                <a href="https://www.kompas.id/baca/humaniora/2024/01/14/manusia-bunuh-80-juta-hiu-per-tahun-regulasi-perlindungan-tidak-mengurangi-penangkapan" class="read-more-button">Read More</a>
-            </div>
-        </div>
-        
-        <div class="blog-post">
-            <img src="/Latihan/images/news2.jpg" alt="Blog Post 1">
-            <div class="blog-content">
-                <h3 style="color: white;">Di ambang kepunahan 'waktu hampir habis' untuk selamatkan hiu dan ikan pari</h3>
-                <hr><br>
-                <p>Jumlah hiu yang ditemukan di laut terbuka menyusut hingga 71% hanya dalam kurun waktu 50 tahun terakhir karena penangkapan berlebihan, menurut sebuah penelitian terbaru.</p>
-                <a href="https://www.bbc.com/indonesia/majalah-55836495#:~:text=Para%20ilmuwan%20mengatakan%20hiu%20dan%20ikan%20pari%20mulai,terakhir%20karena%20penangkapan%20berlebihan%2C%20menurut%20sebuah%20penelitian%20terbaru." class="read-more-button">Read More</a>
-            </div>
-        </div>
-        
-        <div class="blog-post">
-            <img src="/Latihan/images/news3.jpg" alt="Blog Post 1">
-            <div class="blog-content">
-                <h3 style="color: white;">Air Hangat Menarik Lusinan Hiu Berkumpul di Laut Mediterania</h3>
-                <hr><br>
-                <p>Air panas yang memancar dari pabrik industri di kota Hadera di utara Israel menarik hiu-hiu ini yang tidak dianggap berbahaya bagi manusia</p><br><br>
-                <a href="https://www.liputan6.com/photo/read/5168385/air-hangat-menarik-lusinan-hiu-berkumpul-di-laut-mediterania?page=3" class="read-more-button">Read More</a>
-            </div>
-        </div>
-        </div>
+<section id="blog" class="section">
+<h2 id="latestnews" style="text-align: center;">Latest News & Updates</h2>
+<div class="blog-container">
+<div class="blog-post">
+<img src="/Latihan/images/news1.jpg" alt="Blog Post 1">
+<div class="blog-content">
+<h3 style="color: white;">Manusia Bunuh 80 Juta Hiu Per Tahun, Regulasi Tak Mengurangi Penangkapan</h3>
+<hr><br>
+<p>Sekitar 80 juta hiu diperkirakan dibunuh setiap tahunnya. Sebanyak 25 juta ekor merupakan spesies yang terancam punah.</p>
+<a href="https://www.kompas.id/baca/humaniora/2024/01/14/manusia-bunuh-80-juta-hiu-per-tahun-regulasi-perlindungan-tidak-mengurangi-penangkapan" class="read-more-button">Read More</a>
+</div>
+</div>
+
+<div class="blog-post">
+<img src="/Latihan/images/news2.jpg" alt="Blog Post 1">
+<div class="blog-content">
+<h3 style="color: white;">Di ambang kepunahan 'waktu hampir habis' untuk selamatkan hiu dan ikan pari</h3>
+<hr><br>
+<p>Jumlah hiu yang ditemukan di laut terbuka menyusut hingga 71% hanya dalam kurun waktu 50 tahun terakhir karena penangkapan berlebihan, menurut sebuah penelitian terbaru.</p>
+<a href="https://www.bbc.com/indonesia/majalah-55836495#:~:text=Para%20ilmuwan%20mengatakan%20hiu%20dan%20ikan%20pari%20mulai,terakhir%20karena%20penangkapan%20berlebihan%2C%20menurut%20sebuah%20penelitian%20terbaru." class="read-more-button">Read More</a>
+</div>
+</div>
+
+<div class="blog-post">
+<img src="/Latihan/images/news3.jpg" alt="Blog Post 1">
+<div class="blog-content">
+<h3 style="color: white;">Air Hangat Menarik Lusinan Hiu Berkumpul di Laut Mediterania</h3>
+<hr><br>
+<p>Air panas yang memancar dari pabrik industri di kota Hadera di utara Israel menarik hiu-hiu ini yang tidak dianggap berbahaya bagi manusia</p><br><br>
+<a href="https://www.liputan6.com/photo/read/5168385/air-hangat-menarik-lusinan-hiu-berkumpul-di-laut-mediterania?page=3" class="read-more-button">Read More</a>
+</div>
+</div>
+</div>
 </section><br></div></div></div>
-        
-    </div>
+
+</div>
 </section><br><br><br>
 
 
 <!-- Footer -->
 <footer style="background-color: #0C1A1A; color: #ffffff; padding: 40px 20px; font-family: 'Times New Roman', serif;">
-    <div class="container" style="max-width: 1200px; margin: auto;">
-        <div class="footer-content" style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px;">
-            <!-- About Section -->
-            <div class="footer-section" style="flex: 1 1 250px;">
-                <h4 class="hover-underline" style="font-weight: 600; margin-bottom: 15px; display: inline-block; padding-bottom: 5px;">Tentang Kami</h4>
-                <p style="line-height: 1.8; font-size: 14px;">
-                    Shark Odyssey adalah platform yang berdedikasi untuk meningkatkan kesadaran dan edukasi tentang hiu. Kami percaya bahwa pemahaman yang lebih dalam tentang hiu dan ekosistem laut dapat membantu melindungi spesies ini dari ancaman kepunahan. Dengan informasi yang didukung oleh riset, pameran seni hiu, dan pelacakan hiu, kami ingin menginspirasi masyarakat untuk menjadi pelindung laut.
-                </p>
-            </div>
+<div class="container" style="max-width: 1200px; margin: auto;">
+<div class="footer-content" style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px;">
+<!-- About Section -->
+<div class="footer-section" style="flex: 1 1 250px;">
+<h4 class="hover-underline" style="font-weight: 600; margin-bottom: 15px; display: inline-block; padding-bottom: 5px;">Tentang Kami</h4>
+<p style="line-height: 1.8; font-size: 14px;">
+Shark Odyssey adalah platform yang berdedikasi untuk meningkatkan kesadaran dan edukasi tentang hiu. Kami percaya bahwa pemahaman yang lebih dalam tentang hiu dan ekosistem laut dapat membantu melindungi spesies ini dari ancaman kepunahan. Dengan informasi yang didukung oleh riset, pameran seni hiu, dan pelacakan hiu, kami ingin menginspirasi masyarakat untuk menjadi pelindung laut.
+</p>
+</div>
 
-            <!-- Quick Links -->
-            <div class="footer-section" style="flex: 1 1 150px;">
-                <h4 class="hover-underline" style="font-weight: 600; margin-bottom: 15px; display: inline-block; padding-bottom: 5px;">Tautan Penting</h4>
-                <ul style="list-style: none; padding: 0; line-height: 2;">
-                    <li><a href="https://aspaninst.github.io/Latihan/Sharkodyssey.html" class="link-hover" style="color: #ffffff; text-decoration: none; font-size: 14px;">Back to top</a></li>
-                    <li><a href="https://aspaninst.github.io/Latihan/Aboutus.html" class="link-hover" style="color: #ffffff; text-decoration: none; font-size: 14px;">About</a></li>
-                    <li><a href="https://aspaninst.github.io/Latihan/SharkMyths.html" class="link-hover" style="color: #ffffff; text-decoration: none; font-size: 14px;">Myths</a></li>
-                    <li><a href="Aboutus.html#GALLERY" class="link-hover" style="color: #ffffff; text-decoration: none; font-size: 14px;">Gallery</a></li>
-                    <li><a href="#gabung" class="link-hover" style="color: #ffffff; text-decoration: none; font-size: 14px;">Join With Us</a></li>
-                </ul>
-            </div>
+<!-- Quick Links -->
+<div class="footer-section" style="flex: 1 1 150px;">
+<h4 class="hover-underline" style="font-weight: 600; margin-bottom: 15px; display: inline-block; padding-bottom: 5px;">Tautan Penting</h4>
+<ul style="list-style: none; padding: 0; line-height: 2;">
+<li><a href="https://aspaninst.github.io/Latihan/Sharkodyssey.html" class="link-hover" style="color: #ffffff; text-decoration: none; font-size: 14px;">Back to top</a></li>
+<li><a href="https://aspaninst.github.io/Latihan/Aboutus.html" class="link-hover" style="color: #ffffff; text-decoration: none; font-size: 14px;">About</a></li>
+<li><a href="https://aspaninst.github.io/Latihan/SharkMyths.html" class="link-hover" style="color: #ffffff; text-decoration: none; font-size: 14px;">Myths</a></li>
+<li><a href="Aboutus.html#GALLERY" class="link-hover" style="color: #ffffff; text-decoration: none; font-size: 14px;">Gallery</a></li>
+<li><a href="#gabung" class="link-hover" style="color: #ffffff; text-decoration: none; font-size: 14px;">Join With Us</a></li>
+</ul>
+</div>
 
-            <!-- Contact Info -->
-            <div class="footer-section" style="flex: 1 1 200px;">
-                <h4 class="hover-underline" style="font-weight: 600; margin-bottom: 15px; display: inline-block; padding-bottom: 5px;">Hubungi Kami</h4>
-                <p style="font-size: 14px; line-height: 2;">
-                    <strong>Email:</strong>aspanianggraeni@gmail.com<br>
-                    <strong>Telepon:</strong> +62 812 638 889 43<br>
-                    <strong>Alamat:</strong> Jl. Sirnagalih III Kav. A, Cinangka, Kec. Sawangan, Kota Depok, Jawa Barat 16516
-                </p>
-            </div>
+<!-- Contact Info -->
+<div class="footer-section" style="flex: 1 1 200px;">
+<h4 class="hover-underline" style="font-weight: 600; margin-bottom: 15px; display: inline-block; padding-bottom: 5px;">Hubungi Kami</h4>
+<p style="font-size: 14px; line-height: 2;">
+<strong>Email:</strong>aspanianggraeni@gmail.com<br>
+<strong>Telepon:</strong> +62 812 638 889 43<br>
+<strong>Alamat:</strong> Jl. Sirnagalih III Kav. A, Cinangka, Kec. Sawangan, Kota Depok, Jawa Barat 16516
+</p>
+</div>
 
-            <!-- Map Section -->
-            <div class="footer-section" style="flex: 1 1 300px;">
-                <h4 class="hover-underline" style="font-weight: 600; margin-bottom: 15px; display: inline-block; padding-bottom: 5px;">Lokasi Peta</h4>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1983.3056573163992!2d106.77422725242603!3d-6.387165011715832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69eab1938f8fc9%3A0x61c43ed6507ff3b5!2sJl.%20Sirnagalih%20III%2C%20Cinangka%2C%20Kec.%20Sawangan%2C%20Kota%20Depok%2C%20Jawa%20Barat%2016516!5e0!3m2!1sen!2sid!4v1699479930835!5m2!1sen!2sid" width="100%" height="200px" style="border-radius: 10px; border: none;" allowfullscreen></iframe>
-            </div>
-        </div>
+<!-- Map Section -->
+<div class="footer-section" style="flex: 1 1 300px;">
+<h4 class="hover-underline" style="font-weight: 600; margin-bottom: 15px; display: inline-block; padding-bottom: 5px;">Lokasi Peta</h4>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1983.3056573163992!2d106.77422725242603!3d-6.387165011715832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69eab1938f8fc9%3A0x61c43ed6507ff3b5!2sJl.%20Sirnagalih%20III%2C%20Cinangka%2C%20Kec.%20Sawangan%2C%20Kota%20Depok%2C%20Jawa%20Barat%2016516!5e0!3m2!1sen!2sid!4v1699479930835!5m2!1sen!2sid" width="100%" height="200px" style="border-radius: 10px; border: none;" allowfullscreen></iframe>
+</div>
+</div>
 
-        <!-- Social Media Links -->
-        <div style="text-align: center; margin-top: 40px;">
-            <h4 class="hover-underline" style="font-weight: 600; margin-bottom: 20px; margin-top: -40px">Ikuti Kami</h4>
-            <div class="social-icons" style="display: flex; justify-content: center; gap: 20px;">
-                <a href="https://www.facebook.com/" class="social-link" style="color: #ffffff; font-size: 24px;">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="https://x.com/account/access" class="social-link" style="color: #ffffff; font-size: 24px;">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="https://www.instagram.com/ggraeen/" class="social-link" style="color: #ffffff; font-size: 24px;">
-                    <i class="fab fa-instagram"></i>
-                </a>
-            </div>
-        </div>
+<!-- Social Media Links -->
+<div style="text-align: center; margin-top: 40px;">
+<h4 class="hover-underline" style="font-weight: 600; margin-bottom: 20px; margin-top: -40px">Ikuti Kami</h4>
+<div class="social-icons" style="display: flex; justify-content: center; gap: 20px;">
+<a href="https://www.facebook.com/" class="social-link" style="color: #ffffff; font-size: 24px;">
+<i class="fab fa-facebook-f"></i>
+</a>
+<a href="https://x.com/account/access" class="social-link" style="color: #ffffff; font-size: 24px;">
+<i class="fab fa-twitter"></i>
+</a>
+<a href="https://www.instagram.com/ggraeen/" class="social-link" style="color: #ffffff; font-size: 24px;">
+<i class="fab fa-instagram"></i>
+</a>
+</div>
+</div>
 
-        <!-- Copyright -->
-        <div style="text-align: center; margin-top: 20px; font-size: 17px; border-top: 1px solid #444; padding-top: 20px;">
-            <p>© 2024 Shark Odyssey. All rights reserved.</p>
+<!-- Copyright -->
+<div style="text-align: center; margin-top: 20px; font-size: 17px; border-top: 1px solid #444; padding-top: 20px;">
+<p>© 2024 Shark Odyssey. All rights reserved.</p>
             <p>https://aspaninst.github.io/Latihan/Sharkodyssey.html</p>
-        </div>
-    </div>
+</div>
+</div>
 </footer>
 
 <style>
-    .hover-underline {
-        position: relative;
-        cursor: pointer;
-    }
+.hover-underline {
+position: relative;
+cursor: pointer;
+}
 
-    .hover-underline::after {
-        content: "";
-        position: absolute;
-        width: 0;
-        height: 2px;
-        bottom: 0;
-        left: 0;
-        background-color: #39b3a6;
-        transition: width 0.3s ease;
-    }
+.hover-underline::after {
+content: "";
+position: absolute;
+width: 0;
+height: 2px;
+bottom: 0;
+left: 0;
+background-color: #39b3a6;
+transition: width 0.3s ease;
+}
 
-    .hover-underline:hover::after {
-        width: 100%;
-    }
+.hover-underline:hover::after {
+width: 100%;
+}
 
 .link-hover {
-    transition: font-size 0.3s ease, color 0.3s ease;
-    text-decoration: none;
-    color: #ffffff; /* Warna font */
-    background: none; /* Pastikan tidak ada latar belakang */
-    font-size: 16px; /* Ukuran font default */
+transition: font-size 0.3s ease, color 0.3s ease;
+text-decoration: none;
+color: #ffffff; /* Warna font */
+background: none; /* Pastikan tidak ada latar belakang */
+font-size: 16px; /* Ukuran font default */
 }
 
 .link-hover:hover {
-    font-size: 20px; /* Membesarkan font saat hover */
-    color: #39b3a6; /* Opsional: mengubah warna font */
-    background: none; /* Tetap tanpa latar belakang */
+font-size: 20px; /* Membesarkan font saat hover */
+color: #39b3a6; /* Opsional: mengubah warna font */
+background: none; /* Tetap tanpa latar belakang */
 }
 
-    .link-hover:hover {
-    font-size: 20px !important;
+.link-hover:hover {
+font-size: 20px !important;
 }
 
 .social-icons .social-link {
-    color: #ffffff; /* Warna default */
-    font-size: 24px; /* Ukuran default */
-    transition: transform 0.3s ease, color 0.3s ease; /* Animasi transformasi */
-    text-decoration: none; /* Hilangkan garis bawah */
-    background: none;
+color: #ffffff; /* Warna default */
+font-size: 24px; /* Ukuran default */
+transition: transform 0.3s ease, color 0.3s ease; /* Animasi transformasi */
+text-decoration: none; /* Hilangkan garis bawah */
+background: none;
 }
 
 .social-icons .social-link:hover {
-    transform: scale(1.2); /* Membesarkan ikon */
-    color: #39b3a6; /* Opsional: mengubah warna ikon */
+transform: scale(1.2); /* Membesarkan ikon */
+color: #39b3a6; /* Opsional: mengubah warna ikon */
 }
 
 
 </style>
 </body>
-    <script src="scripts/script.js" defer></script>
+<script src="scripts/script.js" defer></script>
 </html>

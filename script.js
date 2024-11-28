@@ -148,24 +148,24 @@ document.getElementById('joinForm').addEventListener('submit', function(event) {
   document.getElementById('joinPopup').style.display = 'none';
 });
 
-// Fungsi untuk toggle tampilan 'threatInfo'
-document.addEventListener('DOMContentLoaded', function() {
-  const threatButton = document.getElementById('threatBtn');
-  const threatInfo = document.getElementById('threatInfo');
+// Namespace untuk tambahan fungsi Mitigasi
+const SharkMitigation = (() => {
+  // Fungsi untuk mengatur tampilan teks "Mitigasi Ancaman terhadap Hiu"
+  const initializeThreatInfo = () => {
+    const threatButton = document.getElementById('threatBtn');
+    const threatInfo = document.getElementById('threatInfo');
 
-  // Pastikan elemen ditemukan di halaman
-  if (threatButton && threatInfo) {
-    threatButton.addEventListener('click', function() {
-      // Toggle tampilan (menampilkan atau menyembunyikan)
-      if (threatInfo.style.display === 'none' || threatInfo.style.display === '') {
-        threatInfo.style.display = 'block'; // Tampilkan
-      } else {
-        threatInfo.style.display = 'none'; // Sembunyikan
-      }
-    });
-  }
-});
-
+    if (threatButton && threatInfo) {
+      threatButton.addEventListener('click', () => {
+        // Toggle visibility of threatInfo
+        if (threatInfo.style.display === 'none' || threatInfo.style.display === '') {
+          threatInfo.style.display = 'block';
+        } else {
+          threatInfo.style.display = 'none';
+        }
+      });
+    }
+  };
 
   // Fungsi untuk membuat animasi atau efek tambahan jika diperlukan
   const addAnimation = () => {
@@ -195,4 +195,22 @@ document.addEventListener('DOMContentLoaded', function() {
 // Panggil inisialisasi setelah DOM siap
 document.addEventListener('DOMContentLoaded', () => {
   SharkMitigation.init();
+});
+
+// Fungsi untuk toggle tampilan 'threatInfo'
+document.addEventListener('DOMContentLoaded', function() {
+  const threatButton = document.getElementById('threatBtn');
+  const threatInfo = document.getElementById('threatInfo');
+
+  // Pastikan elemen ditemukan di halaman
+  if (threatButton && threatInfo) {
+    threatButton.addEventListener('click', function() {
+      // Toggle tampilan (menampilkan atau menyembunyikan)
+      if (threatInfo.style.display === 'none' || threatInfo.style.display === '') {
+        threatInfo.style.display = 'block'; // Tampilkan
+      } else {
+        threatInfo.style.display = 'none'; // Sembunyikan
+      }
+    });
+  }
 });

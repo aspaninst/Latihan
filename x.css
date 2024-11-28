@@ -98,16 +98,17 @@ transition: background-color 0.5s;
 /* Tombol Dropdown */
 /* Tombol Dropdown */
 .dropbtn {
-    color: white; /* Teks berwarna putih */
-    font-size: 15px; /* Ukuran font */
-    border: none; /* Tanpa border */
+    color: white;
+    font-size: 17px;
+    padding: 10px 15px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    margin-top: -40px; /
     cursor: pointer; /* Kursor pointer */
-    font-family: times new roman, serif; /* Font standar */
 }
 .dropbtn:hover {
-    background-color: Black;
-    padding: 12px 20px; /* Jarak dalam tombol */
-    border-radius: 5px; /* Sudut membulat */
+    background: black;
+    transition: background-color 0.5s;
 }
 /* Kontainer Dropdown */
 .dropdown {

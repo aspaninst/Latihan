@@ -98,15 +98,18 @@ a.active, a:hover {
 /* Tombol Dropdown */
 /* Tombol Dropdown */
 .dropbtn {
-    background-color: #4CAF50; /* Warna hijau */
     color: white;
     padding: 12px 20px;
     font-size: 16px;
     border: none;
     cursor: pointer;
     border-radius: 5px;
-    font-family: Arial, sans-serif;
+    font-family: serif;
+    margin-top: 20px;
 }
+
+.dropbtn:hover {
+    background color: black;
 
 /* Kontainer Dropdown */
 .dropdown {
@@ -119,7 +122,7 @@ a.active, a:hover {
     display: none; /* Tersembunyi secara default */
     position: absolute;
     background-color: #ffffff;
-    min-width: 200px; /* Lebar dropdown */
+    min-width: 130px; /* Lebar dropdown */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Bayangan lembut */
     z-index: 1;
     border-radius: 5px;
@@ -133,7 +136,7 @@ a.active, a:hover {
     text-decoration: none; /* Hilangkan garis bawah */
     font-family: Arial, sans-serif;
     font-size: 14px;
-    color: #333; /* Warna teks abu gelap */
+    color: blue; /* Warna teks abu gelap */
     border: 1px solid #ddd; /* Border di sekeliling setiap baris */
     margin: -1px 0 0 0; /* Hindari double border */
     box-sizing: border-box; /* Pastikan border masuk dalam ukuran elemen */
@@ -142,14 +145,13 @@ a.active, a:hover {
 /* Hover pada Tautan */
 .dropdown-content a:hover {
     background-color: #f1f1f1; /* Warna abu terang saat hover */
-    color: #000;
+    color: black;
 }
 
 /* Tampilkan Dropdown saat Hover */
 .dropdown:hover .dropdown-content {
     display: block;
 }
-
 
 /* Responsive adjustments */
 @media (max-width: 858px) {

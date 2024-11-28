@@ -99,14 +99,16 @@ transition: background-color 0.5s;
 /* Tombol Dropdown */
 .dropbtn {
     color: white; /* Teks berwarna putih */
-    padding: 12px 20px; /* Jarak dalam tombol */
     font-size: 15px; /* Ukuran font */
     border: none; /* Tanpa border */
     cursor: pointer; /* Kursor pointer */
-    border-radius: 5px; /* Sudut membulat */
     font-family: times new roman, serif; /* Font standar */
 }
-
+.dropbtn:hover {
+    background-color: Black;
+    padding: 12px 20px; /* Jarak dalam tombol */
+    border-radius: 5px; /* Sudut membulat */
+}
 /* Kontainer Dropdown */
 .dropdown {
     position: relative; /* Posisi relatif untuk dropdown-content */
@@ -755,7 +757,7 @@ font-size: 15px;
 border-radius: 10px;
 text-decoration: none;
 background-color: #0C1A1A;
-margin-left: 520px;
+margin-right: 10px;
 margin-bottom: 40px;
 }
 

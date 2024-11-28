@@ -1,18 +1,18 @@
 function myfunction() {
-  // Menampilkan popup
+  
 
 var popup = document.getElementById('popup');
 var sharkImage = document.getElementById('sharkImage');
 var popupText = document.getElementById('popupText');
 
-  // Mengatur teks dan gambar yang akan ditampilkan
-  popupText.textContent = "Helloo Shark Lovers!";  // Teks untuk popup
-  sharkImage.src = '/Latihan/logohiu.jpeg';  // Path gambar lokal
+  
+  popupText.textContent = "Helloo Shark Lovers!";  
+  sharkImage.src = '/Latihan/logohiu.jpeg';  
   popupText.textContent = "Helloo Shark Lovers!";  
   sharkImage.src = '/Latihan/logohiu.jpeg';  
 sharkImage.alt = 'Shark Image';
 
-  // Menampilkan popup
+  
 popup.style.display = 'flex';
 }
 
@@ -23,7 +23,7 @@ var popup = document.getElementById('popup');
 popup.style.display = 'none';
 }
 
-// Mengatur Tombol dan Menampilkan Info
+
 document.getElementById('threatBtn').addEventListener('click', function() {
 const infoDiv = document.getElementById('threatInfo');
 if (infoDiv.style.display === 'none' || infoDiv.style.display === '') {
@@ -33,14 +33,14 @@ infoDiv.style.display = 'none';
 }
 });
 
-// Fungsi untuk update jam
+
 function updateClock() {
 var now = new Date();
 var hours = now.getHours();
 var minutes = now.getMinutes();
 var seconds = now.getSeconds();
 
-  // Menambahkan angka nol jika jam, menit, atau detik kurang dari 10
+  
 hours = (hours < 10) ? "0" + hours : hours;
 minutes = (minutes < 10) ? "0" + minutes : minutes;
 seconds = (seconds < 10) ? "0" + seconds : seconds;
@@ -49,7 +49,7 @@ var timeString = hours + ":" + minutes + ":" + seconds;
 document.getElementById("time").innerText = timeString;
 }
 
-// Update jam setiap detik
+
 setInterval(updateClock, 1000);
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -99,7 +99,7 @@ calendarBody.appendChild(row);
 generateCalendar(currentMonth, currentYear);
 });
 
-// Menambahkan fungsi untuk menampilkan lebih banyak kartu
+
 document.getElementById('see-more-button').addEventListener('click', function() {
 var moreCards = document.getElementById('more-cards');
 if (moreCards.style.display === "none" || moreCards.style.display === "") {
@@ -110,40 +110,40 @@ moreCards.style.display = "none";
 });
 
 document.addEventListener('DOMContentLoaded', function() {
-// Ambil elemen tombol dan lebih banyak kartu
+
 const seeMoreButton = document.getElementById('see-more-button');
 const moreCards = document.getElementById('more-cards');
 
-  // Ketika tombol "See More" diklik
+ 
 seeMoreButton.addEventListener('click', function() {
-// Tampilkan kartu tambahan
+
 moreCards.style.display = 'flex';
 
-    // Sembunyikan tombol "See More"
+   
 seeMoreButton.style.display = 'none';
 });
 });
 
 
-// Fungsi untuk membuka popup form Join
+
 document.getElementById('joinBtn').addEventListener('click', function() {
 var joinPopup = document.getElementById('joinPopup');
 joinPopup.style.display = 'flex';
 });
 
-// Fungsi untuk menutup popup form Join
+
 document.getElementById('closeJoinPopup').addEventListener('click', function() {
 var joinPopup = document.getElementById('joinPopup');
 joinPopup.style.display = 'none';
 });
 
-// Menutup popup ketika tombol Close ditekan
+
 document.getElementById('closeJoinFormBtn').addEventListener('click', function() {
 var joinPopup = document.getElementById('joinPopup');
 joinPopup.style.display = 'none';
 });
 
-// Menangani submit form (bisa diganti dengan fungsi lain seperti menyimpan data)
+
 document.getElementById('joinForm').addEventListener('submit', function(event) {
 event.preventDefault();
 var name = document.getElementById('name').value;
@@ -152,9 +152,9 @@ alert('Name: ' + name + '\nAddress: ' + address);
 document.getElementById('joinPopup').style.display = 'none';
 });
 
-// Namespace untuk tambahan fungsi Mitigasi
+
 const SharkMitigation = (() => {
-  // Fungsi untuk mengatur tampilan teks "Mitigasi Ancaman terhadap Hiu"
+  
  
 const initializeThreatInfo = () => {
 const threatButton = document.getElementById('threatBtn');
@@ -172,7 +172,7 @@ threatInfo.style.display = 'none';
 }
 };
 
-  // Fungsi untuk membuat animasi atau efek tambahan jika diperlukan
+ 
 const addAnimation = () => {
 const threatButton = document.getElementById('threatBtn');
 if (threatButton) {
@@ -180,44 +180,44 @@ threatButton.addEventListener('mouseover', () => {
 threatButton.style.backgroundColor = '#d1e7e7';
 });
 threatButton.addEventListener('mouseout', () => {
-        threatButton.style.backgroundColor = ''; // Kembali ke default
+        threatButton.style.backgroundColor = ''; 
         threatButton.style.backgroundColor = ''; 
 });
 }
 };
 
-  // Fungsi inisialisasi untuk namespace ini
+  
 const init = () => {
 initializeThreatInfo();
 addAnimation();
 };
 
-// Public API
+
 return {
 init,
 };
 })();
 
-// Panggil inisialisasi setelah DOM siap
+
 document.addEventListener('DOMContentLoaded', () => {
 SharkMitigation.init();
 });
 
-// Fungsi untuk toggle tampilan 'threatInfo'
+
 document.addEventListener('DOMContentLoaded', function() {
 const threatButton = document.getElementById('threatBtn');
 const threatInfo = document.getElementById('threatInfo');
 
-  // Pastikan elemen ditemukan di halaman
+
 if (threatButton && threatInfo) {
 threatButton.addEventListener('click', function() {
-      // Toggle tampilan (menampilkan atau menyembunyikan)
+      
      
 if (threatInfo.style.display === 'none' || threatInfo.style.display === '') {
-        threatInfo.style.display = 'block'; // Tampilkan
+        threatInfo.style.display = 'block'; 
         threatInfo.style.display = 'block'; 
 } else {
-        threatInfo.style.display = 'none'; // Sembunyikan
+        threatInfo.style.display = 'none'; 
         threatInfo.style.display = 'none';
 }
 });

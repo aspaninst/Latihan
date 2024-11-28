@@ -1,5 +1,4 @@
-
- function myfunction() {
+function myfunction() {
   // Menampilkan popup
   var popup = document.getElementById('popup');
   var sharkImage = document.getElementById('sharkImage');
@@ -149,51 +148,24 @@ document.getElementById('joinForm').addEventListener('submit', function(event) {
   document.getElementById('joinPopup').style.display = 'none';
 });
 
-// Namespace khusus untuk mitigasi ancaman hiu
+// Namespace untuk tambahan fungsi Mitigasi
 const SharkMitigation = (() => {
-  // Fungsi untuk toggle tampilan teks "Mitigasi Ancaman terhadap Hiu"
+  // Fungsi untuk mengatur tampilan teks "Mitigasi Ancaman terhadap Hiu"
   const initializeThreatInfo = () => {
-    const threatButton = document.getElementById('threatBtn'); // Tombol yang ada
-    const threatInfo = document.getElementById('threatInfo'); // Area informasi mitigasi
+    const threatButton = document.getElementById('threatBtn');
+    const threatInfo = document.getElementById('threatInfo');
 
-    // Pastikan elemen ada sebelum ditambahkan event
     if (threatButton && threatInfo) {
       threatButton.addEventListener('click', () => {
-        // Toggle visibilitas menggunakan class CSS
-        threatInfo.classList.toggle('visible');
-        threatInfo.classList.toggle('hidden');
+        // Toggle visibility of threatInfo
+        if (threatInfo.style.display === 'none' || threatInfo.style.display === '') {
+          threatInfo.style.display = 'block';
+        } else {
+          threatInfo.style.display = 'none';
+        }
       });
     }
   };
-
-  // Fungsi untuk menambahkan efek hover pada tombol mitigasi
-  const addButtonHoverEffect = () => {
-    const threatButton = document.getElementById('threatBtn'); // Tombol mitigasi
-    if (threatButton) {
-      threatButton.addEventListener('mouseover', () => {
-        threatButton.style.backgroundColor = '#d1e7e7'; // Warna hijau muda saat hover
-      });
-      threatButton.addEventListener('mouseout', () => {
-        threatButton.style.backgroundColor = ''; // Kembali ke default
-      });
-    }
-  };
-
-  // Fungsi inisialisasi mitigasi
-  const init = () => {
-    initializeThreatInfo();
-    addButtonHoverEffect();
-  };
-
-  // Public API
-  return { init };
-})();
-
-// Panggil inisialisasi setelah DOM siap
-document.addEventListener('DOMContentLoaded', () => {
-  SharkMitigation.init();
-});
-
 
   // Fungsi untuk membuat animasi atau efek tambahan jika diperlukan
   const addAnimation = () => {
@@ -224,5 +196,3 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('DOMContentLoaded', () => {
   SharkMitigation.init();
 });
-
-

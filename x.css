@@ -96,77 +96,57 @@ a.active, a:hover {
 }
 
 /* Tombol Dropdown */
+/* Tombol Dropdown */
 .dropbtn {
-    font-family: 'Times New Roman', serif;
-    font-size: 17px;
-    color: white;
-    background-color: black;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-    text-transform: uppercase;
+    background-color: #4CAF50; /* Warna hijau untuk tombol */
+    color: white; /* Teks berwarna putih */
+    padding: 12px 20px; /* Jarak dalam tombol */
+    font-size: 16px; /* Ukuran font */
+    border: none; /* Tanpa border */
+    cursor: pointer; /* Kursor pointer */
+    border-radius: 5px; /* Sudut membulat */
+    font-family: Arial, sans-serif; /* Font standar */
 }
 
-/* Hover pada tombol dropdown */
-.dropbtn:hover {
-    background-color: #444; /* Warna abu yang sedikit lebih terang */
-}
-
-/* Container Dropdown */
-/* The dropdown container */
+/* Kontainer Dropdown */
 .dropdown {
-  float: left;
-  overflow: hidden;
+    position: relative; /* Posisi relatif untuk dropdown-content */
+    display: inline-block; /* Agar elemen berdampingan */
 }
 
-/* Dropdown button */
-.dropdown .dropbtn {
-  font-size: 16px;
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit; /* Important for vertical align on mobile phones */
-  margin: 0; /* Important for vertical align on mobile phones */
-}
-
-/* Add a red background color to navbar links on hover */
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
-}
-
-/* Dropdown content (hidden by default) */
+/* Isi Dropdown */
 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+    display: none; /* Tersembunyi secara default */
+    position: absolute; /* Agar muncul di bawah tombol */
+    background-color: #ffffff; /* Latar belakang putih */
+    min-width: 200px; /* Lebar dropdown */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Bayangan lembut */
+    z-index: 1; /* Supaya berada di atas elemen lain */
+    border-radius: 5px; /* Sudut membulat */
+    border: 1px solid #ddd; /* Border tipis */
+    padding: 5px 0; /* Spasi vertikal untuk elemen di dalam */
 }
 
-/* Links inside the dropdown */
+/* Tautan dalam Dropdown */
 .dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
+    color: #333; /* Teks abu gelap */
+    padding: 12px 16px; /* Spasi dalam tautan */
+    text-decoration: none; /* Hilangkan garis bawah */
+    display: block; /* Tautan mengambil seluruh lebar */
+    font-family: Arial, sans-serif; /* Font standar */
+    font-size: 14px; /* Ukuran font */
 }
 
-/* Add a grey background color to dropdown links on hover */
+/* Hover pada Tautan */
 .dropdown-content a:hover {
-  background-color: #ddd;
+    background-color: #f1f1f1; /* Warna abu terang saat dihover */
+    color: #000; /* Warna teks menjadi hitam */
 }
 
-/* Show the dropdown menu on hover */
+/* Tampilkan Dropdown Saat Hover */
 .dropdown:hover .dropdown-content {
-  display: block;
+    display: block; /* Tampilkan dropdown */
 }
-
 .checkbtn {
   font-size: 30px;
   color: cadetblue;

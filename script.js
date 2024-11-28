@@ -148,21 +148,6 @@ document.getElementById('joinForm').addEventListener('submit', function(event) {
   document.getElementById('joinPopup').style.display = 'none';
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-  const threatButton = document.getElementById('threatBtn');
-
-  if (threatButton) {
-    threatButton.addEventListener('click', function() {
-      const infoDiv = document.getElementById('threatInfo');
-      if (infoDiv.style.display === 'none' || infoDiv.style.display === '') {
-        infoDiv.style.display = 'block'; // Menampilkan informasi ancaman
-      } else {
-        infoDiv.style.display = 'none'; // Menyembunyikan informasi
-      }
-    });
-  }
-});
-
   // Fungsi untuk membuat animasi atau efek tambahan jika diperlukan
   const addAnimation = () => {
     const threatButton = document.getElementById('threatBtn');

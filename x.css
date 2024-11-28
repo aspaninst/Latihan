@@ -341,83 +341,114 @@ background-color: aliceblue;
 color: black;
 }
 
+/* Tampilkan Area Informasi */
+.visible {
+    display: block; /* Ditampilkan */
+    padding: 20px; /* Spasi dalam area */
+    background-color: #f9f9f9; /* Latar belakang abu terang */
+    border: 2px solid #ccc; /* Border abu lembut */
+    border-radius: 8px; /* Sudut membulat */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+    color: #1d2b2b; /* Warna teks */
+    font-family: Arial, sans-serif; /* Font */
+    margin-top: 20px; /* Jarak atas */
+}
+
+/* Styling untuk List */
+#threatInfo ul {
+    list-style-type: disc; /* Tanda bullet */
+    padding-left: 20px; /* Spasi dari tepi kiri */
+    margin: 10px 0; /* Margin atas dan bawah */
+}
+
+#threatInfo ul li {
+    margin-bottom: 10px; /* Jarak antar item */
+    line-height: 1.6; /* Jarak antar baris */
+}
+
+/* Heading Informasi */
+#threatInfo strong {
+    color: #2a6b6b; /* Warna aksen hijau gelap */
+    font-weight: bold; /* Penekanan pada teks */
+}
+
+/* Judul Tambahan */
+#threatInfo p {
+    font-size: 18px; /* Ukuran font lebih besar */
+    margin-top: 20px; /* Jarak atas */
+    text-align: center; /* Penataan tengah */
+}
+
+/* Poin List Tambahan */
+#threatInfo ul li:nth-child(n+4) {
+    color: #3a3a3a; /* Warna teks abu gelap */
+}
 
 /* Styling untuk konten utama */
-/* Styling untuk konten utama */
 .mitigasi {
-background-color: #1d2b2b;
-padding: 30px;
-border-radius: 10px;
-box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-max-width: 800px;
-margin: 30px auto;
-font-family: 'Times New Roman', sans-serif;
+    background-color: #1d2b2b; /* Latar belakang gelap */
+    padding: 30px; /* Spasi dalam area */
+    border-radius: 10px; /* Sudut membulat */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+    max-width: 800px; /* Lebar maksimum */
+    margin: 30px auto; /* Tengahkan area */
+    font-family: 'Times New Roman', sans-serif; /* Font utama */
 }
 
 #mitigasitext {
-font-family: 'Lucida Handwriting', cursive;
-color: white;
+    font-family: 'Lucida Handwriting', cursive; /* Font khusus */
+    color: white; /* Warna teks putih */
 }
 
 .mitigasi h2 {
-color: white;
-margin-bottom: 15px;
-font-size: 24px;
+    color: white; /* Warna putih */
+    margin-bottom: 15px; /* Jarak bawah */
+    font-size: 24px; /* Ukuran font */
 }
 
 .mitigasi p {
-font-size: 16px;
-color: #eef9e6;
+    font-size: 16px; /* Ukuran font */
+    color: #eef9e6; /* Warna hijau pucat */
 }
 
+/* Tombol dalam area mitigasi */
 .mitigasi button {
-background-color: white;
-color: #1d2b2b;
-border: 1px solid white;
-padding: 12px 18px;
-font-size: 16px;
-cursor: pointer;
-border-radius: 8px;
-transition: background-color 0.3s ease;
-margin-top: 10px;
+    background-color: white; /* Latar belakang putih */
+    color: #1d2b2b; /* Warna teks gelap */
+    border: 1px solid white; /* Border putih */
+    padding: 12px 18px; /* Spasi dalam tombol */
+    font-size: 16px; /* Ukuran font */
+    cursor: pointer; /* Pointer kursor */
+    border-radius: 8px; /* Sudut membulat */
+    transition: background-color 0.3s ease; /* Transisi halus */
+    margin-top: 10px; /* Jarak atas */
 }
 
 .mitigasi button:hover {
-background-color: #1d2b2b;
-color: white;
+    background-color: #1d2b2b; /* Latar belakang gelap saat hover */
+    color: white; /* Warna teks putih */
 }
 
-#threatInfo {
-display: none;
-margin-top: 20px;
-background-color: #eef9e6;
-padding: 15px;
-border-radius: 8px;
-}
-
-#threatInfo ul {
-font-size: 16px;
-line-height: 1.6;
-color: #1d2b2b;
-}
-
-
-#threatInfo li {
-margin-bottom: 10px;
-}
-
-/* Styling untuk hidden element */
+/* Styling untuk elemen yang tersembunyi */
 .hidden {
-display: none;
-}
-h2 {
-font-size: 28px;
-color: #333;
+    display: none; /* Sembunyikan elemen */
 }
 
-p {
-font-size: 18px;
+/* Default Heading */
+h2 {
+    font-size: 28px; /* Ukuran font */
+    color: #333; /* Warna teks */
 }
+
+/* Default Paragraph */
+p {
+    font-size: 18px; /* Ukuran font */
+    color: #333; /* Warna teks */
+    margin-bottom: 15px; /* Jarak bawah */
+}
+
+
+
 
 /* Styling untuk waktu dan kalender */
 .clock, .calendar-container {

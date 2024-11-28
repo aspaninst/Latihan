@@ -98,92 +98,92 @@ transition: background-color 0.5s;
 /* Tombol Dropdown */
 /* Tombol Dropdown */
 .dropbtn {
-color: white; /* Warna teks putih */
-font-size: 17px; /* Ukuran font */
-text-transform: uppercase; /* Huruf kapital semua */
-margin-top: 20px; /* Posisi atas */
-cursor: pointer; /* Kursor pointer */
-border: none; /* Tanpa border */
-background: transparent; /* Transparan untuk tombol default */
-padding: 10px 15px; /* Spasi dalam tombol */
-transition: all 0.5s ease; /* Animasi transisi halus */
-font-family: times new roman, serif;
-}
-
-.dropbtn:hover {
-background: black; /* Latar belakang hitam saat hover */
-color: white; /* Warna teks tetap putih */
-border-radius: 3px; /* Sudut membulat */
-transition: background-color 0.5s ease, padding 0.5s ease; /* Transisi halus */
-font-family: times new roman, serif;
+    background-color: #4CAF50; /* Warna hijau untuk tombol */
+    color: white; /* Teks berwarna putih */
+    padding: 12px 20px; /* Jarak dalam tombol */
+    font-size: 16px; /* Ukuran font */
+    border: none; /* Tanpa border */
+    cursor: pointer; /* Kursor pointer */
+    border-radius: 5px; /* Sudut membulat */
+    font-family: Arial, sans-serif; /* Font standar */
+    background-color: #4CAF50; /* Warna hijau */
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
 }
 
 /* Kontainer Dropdown */
 .dropdown {
-position: relative; /* Posisi relatif untuk dropdown-content */
-display: inline-block; /* Agar elemen berdampingan */
-position: relative;
-display: inline-block;
+    position: relative; /* Posisi relatif untuk dropdown-content */
+    display: inline-block; /* Agar elemen berdampingan */
+    position: relative;
+    display: inline-block;
 }
 
 /* Isi Dropdown */
 .dropdown-content {
 display: none; /* Tersembunyi secara default */
-position: absolute; /* Agar muncul di bawah tombol */
-background-color: #ffffff; /* Latar belakang putih */
-position: absolute;
-background-color: #ffffff;
+    position: absolute; /* Agar muncul di bawah tombol */
+    background-color: #ffffff; /* Latar belakang putih */
+    position: absolute;
+    background-color: #ffffff;
 min-width: 200px; /* Lebar dropdown */
 box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Bayangan lembut */
-z-index: 1; /* Supaya berada di atas elemen lain */
-border-radius: 5px; /* Sudut membulat */
-border: 1px solid #ddd; /* Border tipis */
-padding: 5px 0; /* Spasi vertikal untuk elemen di dalam */
-z-index: 1;
-border-radius: 5px;
-overflow: hidden; /* Hilangkan overflow */
+    z-index: 1; /* Supaya berada di atas elemen lain */
+    border-radius: 5px; /* Sudut membulat */
+    border: 1px solid #ddd; /* Border tipis */
+    padding: 5px 0; /* Spasi vertikal untuk elemen di dalam */
+    z-index: 1;
+    border-radius: 5px;
+    overflow: hidden; /* Hilangkan overflow */
 }
 
 /* Tautan dalam Dropdown */
 /* Baris Dropdown */
 .dropdown-content a {
-color: #333; /* Teks abu gelap */
-padding: 12px 16px; /* Spasi dalam tautan */
-display: block; /* Setiap item menjadi blok */
-padding: 12px 16px;
+    color: #333; /* Teks abu gelap */
+    padding: 12px 16px; /* Spasi dalam tautan */
+    display: block; /* Setiap item menjadi blok */
+    padding: 12px 16px;
 text-decoration: none; /* Hilangkan garis bawah */
-display: block; /* Tautan mengambil seluruh lebar */
-font-family: Arial, sans-serif; /* Font standar */
-font-size: 14px; /* Ukuran font */
-font-family: Arial, sans-serif;
-font-size: 14px;
-color: #333; /* Warna teks abu gelap */
-border: 1px solid #ddd; /* Border di sekeliling setiap baris */
-margin: -1px 0 0 0; /* Hindari double border */
-box-sizing: border-box; /* Pastikan border masuk dalam ukuran elemen */
+    display: block; /* Tautan mengambil seluruh lebar */
+    font-family: Arial, sans-serif; /* Font standar */
+    font-size: 14px; /* Ukuran font */
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333; /* Warna teks abu gelap */
+    border: 1px solid #ddd; /* Border di sekeliling setiap baris */
+    margin: -1px 0 0 0; /* Hindari double border */
+    box-sizing: border-box; /* Pastikan border masuk dalam ukuran elemen */
 }
 
 /* Hover pada Tautan */
 .dropdown-content a:hover {
-background-color: #f1f1f1; /* Warna abu terang saat dihover */
-color: #000; /* Warna teks menjadi hitam */
-background-color: #f1f1f1; /* Warna abu terang saat hover */
-color: #000;
+    background-color: #f1f1f1; /* Warna abu terang saat dihover */
+    color: #000; /* Warna teks menjadi hitam */
+    background-color: #f1f1f1; /* Warna abu terang saat hover */
+    color: #000;
 }
+
+/* Tampilkan Dropdown Saat Hover */
 /* Tampilkan Dropdown saat Hover */
 .dropdown:hover .dropdown-content {
-display: block; /* Tampilkan dropdown */
+    display: block; /* Tampilkan dropdown */
 }
 .checkbtn {
-font-size: 30px;
-color: cadetblue;
-cursor: pointer;
-display: none;
-display: block;
+  font-size: 30px;
+  color: cadetblue;
+  cursor: pointer;
+  display: none;
+    display: block;
 }
 
 #check {
-display: none;
+  display: none;
 }
 
 /* Responsive adjustments */
@@ -341,25 +341,6 @@ background-color: aliceblue;
 color: black;
 }
 
-/* Tampilkan Area Informasi */
-.visible {
-    display: block; /* Ditampilkan */
-    padding: 20px; /* Spasi dalam area */
-    background-color: #f9f9f9; /* Latar belakang abu terang */
-    border: 2px solid #ccc; /* Border abu lembut */
-    border-radius: 8px; /* Sudut membulat */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
-    color: #1d2b2b; /* Warna teks */
-    font-family: Arial, sans-serif; /* Font */
-    margin-top: 20px; /* Jarak atas */
-}
-
-/* Styling untuk List */
-#threatInfo ul {
-    list-style-type: disc; /* Tanda bullet */
-    padding-left: 20px; /* Spasi dari tepi kiri */
-    margin: 10px 0; /* Margin atas dan bawah */
-}
 
 /* Styling untuk konten utama */
 /* Styling untuk konten utama */
@@ -371,37 +352,22 @@ box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 max-width: 800px;
 margin: 30px auto;
 font-family: 'Times New Roman', sans-serif;
-#threatInfo ul li {
-    margin-bottom: 10px; /* Jarak antar item */
-    line-height: 1.6; /* Jarak antar baris */
 }
 
 #mitigasitext {
 font-family: 'Lucida Handwriting', cursive;
 color: white;
-/* Heading Informasi */
-#threatInfo strong {
-    color: #2a6b6b; /* Warna aksen hijau gelap */
-    font-weight: bold; /* Penekanan pada teks */
 }
 
 .mitigasi h2 {
 color: white;
 margin-bottom: 15px;
 font-size: 24px;
-/* Judul Tambahan */
-#threatInfo p {
-    font-size: 18px; /* Ukuran font lebih besar */
-    margin-top: 20px; /* Jarak atas */
-    text-align: center; /* Penataan tengah */
 }
 
 .mitigasi p {
 font-size: 16px;
 color: #eef9e6;
-/* Poin List Tambahan */
-#threatInfo ul li:nth-child(n+4) {
-    color: #3a3a3a; /* Warna teks abu gelap */
 }
 
 .mitigasi button {
@@ -414,23 +380,11 @@ cursor: pointer;
 border-radius: 8px;
 transition: background-color 0.3s ease;
 margin-top: 10px;
-/* Styling untuk konten utama */
-.mitigasi {
-    background-color: #1d2b2b; /* Latar belakang gelap */
-    padding: 30px; /* Spasi dalam area */
-    border-radius: 10px; /* Sudut membulat */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
-    max-width: 800px; /* Lebar maksimum */
-    margin: 30px auto; /* Tengahkan area */
-    font-family: 'Times New Roman', sans-serif; /* Font utama */
 }
 
 .mitigasi button:hover {
 background-color: #1d2b2b;
 color: white;
-#mitigasitext {
-    font-family: 'Lucida Handwriting', cursive; /* Font khusus */
-    color: white; /* Warna teks putih */
 }
 
 #threatInfo {
@@ -439,66 +393,31 @@ margin-top: 20px;
 background-color: #eef9e6;
 padding: 15px;
 border-radius: 8px;
-.mitigasi h2 {
-    color: white; /* Warna putih */
-    margin-bottom: 15px; /* Jarak bawah */
-    font-size: 24px; /* Ukuran font */
 }
 
 #threatInfo ul {
 font-size: 16px;
 line-height: 1.6;
 color: #1d2b2b;
-.mitigasi p {
-    font-size: 16px; /* Ukuran font */
-    color: #eef9e6; /* Warna hijau pucat */
 }
 
-/* Tombol dalam area mitigasi */
-.mitigasi button {
-    background-color: white; /* Latar belakang putih */
-    color: #1d2b2b; /* Warna teks gelap */
-    border: 1px solid white; /* Border putih */
-    padding: 12px 18px; /* Spasi dalam tombol */
-    font-size: 16px; /* Ukuran font */
-    cursor: pointer; /* Pointer kursor */
-    border-radius: 8px; /* Sudut membulat */
-    transition: background-color 0.3s ease; /* Transisi halus */
-    margin-top: 10px; /* Jarak atas */
-}
 
 #threatInfo li {
 margin-bottom: 10px;
-.mitigasi button:hover {
-    background-color: #1d2b2b; /* Latar belakang gelap saat hover */
-    color: white; /* Warna teks putih */
 }
 
 /* Styling untuk hidden element */
-/* Styling untuk elemen yang tersembunyi */
 .hidden {
 display: none;
-    display: none; /* Sembunyikan elemen */
 }
-
-/* Default Heading */
 h2 {
 font-size: 28px;
 color: #333;
-    font-size: 28px; /* Ukuran font */
-    color: #333; /* Warna teks */
 }
 
-/* Default Paragraph */
 p {
 font-size: 18px;
-    font-size: 18px; /* Ukuran font */
-    color: #333; /* Warna teks */
-    margin-bottom: 15px; /* Jarak bawah */
 }
-
-
-
 
 /* Styling untuk waktu dan kalender */
 .clock, .calendar-container {
@@ -845,7 +764,7 @@ font-size: 15px;
 border-radius: 10px;
 text-decoration: none;
 background-color: #0C1A1A;
-margin-right: 10px;
+margin-left: 495px;
 margin-bottom: 40px;
 }
 

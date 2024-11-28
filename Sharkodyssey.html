@@ -16,10 +16,13 @@
 <label class="logo"><div class="topnav"><input type="text" placeholder="Search.."></div><!-- Search Bar --><h1 id="title">Shark Odyssey</h1><br><p id="title1">"Indonesia merupakan negara penangkap hiu terbesar di dunia."<br><br>Berdasarkan data statistik Badan Pangan Dunia (FAO), Indonesia menyumbang lebih dari sepuluh persen terhadap tangkapan hiu dunia, sehingga selalu menduduki posisi pertama dari paling tidak 40 negara penangkap hiu selama lebih dari satu dekade terakhir.</p> 
 <div class="navigasi"><button onclick="myfunction()" style="font-family:serif; font-size: 17px">Helloww</button></div>
 
+<!-- Popup content -->
 <!-- Popup Shark Lovers -->
 <div id="popup" class="popup">
 <div class="popup-content">
 <button class="close-btn" onclick="closePopup()">close</button>
+<span id="popupText">Helloo Shark Lovers!</span> <!-- Teks yang akan muncul -->
+<img id="sharkImage" src="" alt="Shark Image"> <!-- Gambar yang akan muncul -->
 <span id="popupText">Helloo Shark Lovers!</span> 
 <img id="sharkImage" src="" alt="Shark Image">
 </div>
@@ -59,10 +62,12 @@
 <h2 id="mitigasitext">Mitigasi Ancaman terhadap Hiu</h2>
 <p>Pelajari lebih lanjut tentang cara kita bisa membantu melindungi hiu.</p>
 
+<!-- Tombol Interaktif untuk Menampilkan Info -->
 <div class="mitigasi">
 <button id="threatBtn">Ancaman terhadap Hiu</button>
 </div><script src="scripts/script.js" defer></script>
 
+<!-- Area untuk Menampilkan Informasi -->
 <div id="threatInfo" class="hidden">
 <ul>
 <li><strong>Penangkapan Ilegal:</strong> Hiu sering diburu untuk siripnya, yang menyebabkan penurunan populasi mereka.</li>
@@ -101,10 +106,12 @@
 </tr>
 </thead>
 <tbody id="calendar-body">
+<!-- Calendar will be dynamically generated here -->
 </tbody>
 </table><script src="script.js" defer></script>
 </div>
 
+<!-- Form Upload Pertanyaan -->
 <!-- Question Form -->
 <div class="upload">
 <h3>Any questions?</h3>
@@ -198,6 +205,7 @@
 <p>Hiu besar ini ditemukan di samudra seluruh dunia dengan warna abu-abu gelap. Tumbuh hingga sekitar 4 meter dan memangsa ikan besar serta hiu lainnya.</p>
 </div>
 
+<!-- Kartu Tambahan (akan tampil di bawah setelah klik "See More") -->
 <div class="more-cards" id="more-cards">
 <div class="card">
 <h3>Dusky Shark</h3><br>
@@ -250,6 +258,7 @@
 <!-- Button Join -->
 <button id="joinBtn">Let's Join With Us</button><br><br><br><hr><br><hr></div>
 
+<!-- Popup Form -->
 <!-- Popup Form untuk Join -->
 <div id="joinPopup" class="popup">
 <div class="popup-content">
@@ -316,6 +325,7 @@
 <footer style="background-color: #0C1A1A; color: #ffffff; padding: 40px 20px; font-family: 'Times New Roman', serif;">
 <div class="container" style="max-width: 1200px; margin: auto;">
 <div class="footer-content" style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px;">
+<!-- About Section -->
 <div class="footer-section" style="flex: 1 1 250px;">
 <h4 class="hover-underline" style="font-weight: 600; margin-bottom: 15px; display: inline-block; padding-bottom: 5px;">Tentang Kami</h4>
 <p style="line-height: 1.8; font-size: 14px;">
@@ -352,6 +362,7 @@ Shark Odyssey adalah platform yang berdedikasi untuk meningkatkan kesadaran dan 
 </div>
 </div>
 
+<!-- Social Media Links -->
 <!-- Social Media -->
 <div style="text-align: center; margin-top: 40px;">
 <h4 class="hover-underline" style="font-weight: 600; margin-bottom: 20px; margin-top: -40px">Ikuti Kami</h4>
@@ -371,7 +382,7 @@ Shark Odyssey adalah platform yang berdedikasi untuk meningkatkan kesadaran dan 
 <!-- Copyright -->
 <div style="text-align: center; margin-top: 20px; font-size: 17px; border-top: 1px solid #444; padding-top: 20px;">
 <p>© 2024 Shark Odyssey. All rights reserved.</p>
-            <p>https://aspaninst.github.io/Latihan/Sharkodyssey.html</p>
+<p>https://aspaninst.github.io/Latihan/Sharkodyssey.html</p>
 </div>
 </div>
 </footer>
@@ -401,15 +412,15 @@ width: 100%;
 .link-hover {
 transition: font-size 0.3s ease, color 0.3s ease;
 text-decoration: none;
-color: #ffffff; 
-background: none; 
-font-size: 16px; 
+color: #ffffff; /* Warna font */
+background: none; /* Pastikan tidak ada latar belakang */
+font-size: 16px; /* Ukuran font default */
 }
 
 .link-hover:hover {
-font-size: 20px; 
-color: #39b3a6; 
-background: none; 
+font-size: 20px; /* Membesarkan font saat hover */
+color: #39b3a6; /* Opsional: mengubah warna font */
+background: none; /* Tetap tanpa latar belakang */
 }
 
 .link-hover:hover {
@@ -417,17 +428,18 @@ font-size: 20px !important;
 }
 
 .social-icons .social-link {
-color: #ffffff; 
-font-size: 24px; 
-transition: transform 0.3s ease, color 0.3s ease; 
-text-decoration: none; 
+color: #ffffff; /* Warna default */
+font-size: 24px; /* Ukuran default */
+transition: transform 0.3s ease, color 0.3s ease; /* Animasi transformasi */
+text-decoration: none; /* Hilangkan garis bawah */
 background: none;
 }
 
 .social-icons .social-link:hover {
-transform: scale(1.2); 
-color: #39b3a6; 
+transform: scale(1.2); /* Membesarkan ikon */
+color: #39b3a6; /* Opsional: mengubah warna ikon */
 }
+
 
 </style>
 </body>

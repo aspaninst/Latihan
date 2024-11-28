@@ -101,7 +101,7 @@ transition: background-color 0.5s;
     color: white; /* Warna teks putih */
     font-size: 17px; /* Ukuran font */
     text-transform: uppercase; /* Huruf kapital semua */
-    margin-top: -40px; /* Posisi atas */
+    margin-top: -30px; /* Posisi atas */
     cursor: pointer; /* Kursor pointer */
     border: none; /* Tanpa border */
     background: transparent; /* Transparan untuk tombol default */
